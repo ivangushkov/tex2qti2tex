@@ -1,0 +1,565 @@
+%question 1
+\begin{IndexedQuestion}
+   \QuestionContentUnits{controllers}
+   \QuestionCourses{TK8117}
+   \QuestionType{multiple choice}
+   \QuestionBody{
+       \begin{equation*}
+	\mathbf{\dot x} = \overbrace{\left[
+	\begin{array}{ccc}
+	 -1 & 0 & a  \\
+	 0 & 0 & 0 \\
+	0 & 0 & 0 
+	\end{array}
+	\right]}^\mathbf{A} \mathbf{x} + 
+ \overbrace{\left[
+	\begin{array}{cc}
+	 1 & 0 \\ 0 & 1 \\ 0 & 0
+	\end{array}
+	\right]}^\mathbf{B} \mathbf{u}, \quad 
+	y = \overbrace{\left[
+	\begin{array}{ccc}
+	 1 & 0 & 0
+	\end{array}
+	\right]}^\mathbf{C} \mathbf{x}
+\end{equation*}
+Is this system:
+
+       }% DO NOT INCLUDE FIGURES HERE
+       \QuestionPotentialAnswers{
+            \answer  Unstable (internally and in the input-output sense)
+            \answer  Exponentially stable
+            \correctanswer  Marginally stable 
+            \answer  BIBO stable, but not internally stable
+            \answer  Stability properties depend on $a$
+       } % ONLY IF TYPE = MULTIPLE CHOICE
+       \QuestionAuthorsEmails{ivanig@stud.ntnu.no}
+       \QuestionLanguage{English}
+       %\begin{IndexedSolution}
+           %\SolutionContentUnits{controllers}
+           %\SolutionBody{
+% 
+%           }
+           %\SolutionAuthorsEmail{fivanig@stud.ntnu.no}
+       %\end{IndexedSolution}
+\end{IndexedQuestion}
+
+
+%question 2
+\begin{IndexedQuestion}
+   \QuestionContentUnits{controllers}
+   \QuestionCourses{TK8117}
+   \QuestionType{multiple choice}
+   \QuestionBody{
+       Given the two continuous time systems:
+\begin{align*}\label{sys1a}
+	\mathbf{\dot x} =& \left[
+	\begin{array}{ccc}
+	  -1 & -1 \\ 0 & -2
+	\end{array}
+	\right] \mathbf{x} + \left[
+	\begin{array}{cc}
+	 1 \\  0
+	\end{array}
+	\right] u_1, \quad 
+	y_1 = \left[ \begin{array}{cc}
+	 1 & 0
+	\end{array}
+	\right] \mathbf{x} \\
+	\mathbf{\dot z} =& \left[
+	\begin{array}{ccc}
+	 -1 & 0  \\ 0 & -2
+	\end{array}
+	\right] \mathbf{z} + \left[
+	\begin{array}{cc}
+	 1 \\ 0
+	\end{array}
+	\right] u_2, \quad 
+	y_2 = \left[ \begin{array}{cc}
+	 1 & 1
+	\end{array}
+	\right] \mathbf{z}
+\end{align*}
+
+Are these systems:
+
+       }% DO NOT INCLUDE FIGURES HERE
+       \QuestionPotentialAnswers{
+            \answer  Unrelated
+            \correctanswer  Algebraically equivalent (second system is diagonalization of first)
+            \answer  Zero-state equivalent but not algebraically equivalent
+            \answer  Dual systems
+       } % ONLY IF TYPE = MULTIPLE CHOICE
+       \QuestionAuthorsEmails{ivanig@stud.ntnu.no}
+       \QuestionLanguage{English}
+       %\begin{IndexedSolution}
+           %\SolutionContentUnits{controllers}
+           %\SolutionBody{
+% 
+%           }
+           %\SolutionAuthorsEmail{fivanig@stud.ntnu.no}
+       %\end{IndexedSolution}
+\end{IndexedQuestion}
+
+
+%question 3
+\begin{IndexedQuestion}
+   \QuestionContentUnits{controllers}
+   \QuestionCourses{TK8117}
+   \QuestionType{multiple choice}
+   \QuestionBody{
+       \begin{equation*}
+
+Given the two continuous time systems:
+\begin{align*}
+	\mathbf{\dot x} =& \left[
+	\begin{array}{ccc}
+	 1 & 0 & 0 \\ 1 & -1 & 0 \\ 0 & 0 & 1
+ 	\end{array}
+	\right] \mathbf{x} + \left[
+	\begin{array}{cc}
+	 1 \\  0 \\ 0
+	\end{array}
+	\right] u_1, \quad 
+	y_1 = \left[ \begin{array}{ccc}
+	 1 & 1 & 0
+	\end{array}
+	\right] \mathbf{x} \\
+	\mathbf{\dot z} =& \left[
+	\begin{array}{ccc}
+	 0 & 1  \\ 1 & 0
+	\end{array}
+	\right] \mathbf{z} + \left[
+	\begin{array}{cc}
+	 1 \\ 0
+	\end{array}
+	\right] u_2, \quad 
+	y_2 = \left[ \begin{array}{cc}
+	 1 & 2
+	\end{array}
+	\right] \mathbf{z}
+\end{align*}
+
+Are these systems:
+
+       }% DO NOT INCLUDE FIGURES HERE
+       \QuestionPotentialAnswers{
+            \answer  Unrelated
+            \answer  Algebraically equivalent
+            \correctanswer  Zero-state equivalent but not algebraically equivalent
+            \answer  Dual systems
+       } % ONLY IF TYPE = MULTIPLE CHOICE
+       \QuestionAuthorsEmails{ivanig@stud.ntnu.no}
+       \QuestionLanguage{English}
+       %\begin{IndexedSolution}
+           %\SolutionContentUnits{controllers}
+           %\SolutionBody{
+% 
+%           }
+           %\SolutionAuthorsEmail{fivanig@stud.ntnu.no}
+       %\end{IndexedSolution}
+\end{IndexedQuestion}
+
+
+%question 4
+\begin{IndexedQuestion}
+   \QuestionContentUnits{controllers}
+   \QuestionCourses{TK8117}
+   \QuestionType{multiple choice}
+   \QuestionBody{
+       Given the continuous time system:
+\begin{align*}
+	\mathbf{\dot x} =& \left[
+	\begin{array}{ccc}
+	  -1 & \omega \\ 0 & 1
+	\end{array}
+	\right] \mathbf{x} + \left[
+	\begin{array}{cc}
+	 0 \\  1
+	\end{array}
+	\right] u, \quad 
+	y = \left[ \begin{array}{cc}
+	 1 & 0
+	\end{array}
+	\right] \mathbf{x} 
+\end{align*}
+Using a state feedback $u = -\left[ \begin{array}{cc} k_1 & k_2 \end{array} \right] \mathbf{x}$, which values of $k_1$ and $k_2$ place the closed-loop system's poles in -1 and -0.5?
+
+       }% DO NOT INCLUDE FIGURES HERE
+       \QuestionPotentialAnswers{
+            \correctanswer  $k_1=0$ and $k_2=1.5$
+            \answer  $k_1=0$ and $k_2=\frac{1.5}{\omega}$
+            \answer  $k_1=\frac{0.5}{\omega} $ and $k_2=1$
+            \answer  $k_1=-1$ and $k_2=0.5$
+       } % ONLY IF TYPE = MULTIPLE CHOICE
+       \QuestionAuthorsEmails{ivanig@stud.ntnu.no}
+       \QuestionLanguage{English}
+       %\begin{IndexedSolution}
+           %\SolutionContentUnits{controllers}
+           %\SolutionBody{
+% 
+%           }
+           %\SolutionAuthorsEmail{fivanig@stud.ntnu.no}
+       %\end{IndexedSolution}
+\end{IndexedQuestion}
+
+
+%question 5
+\begin{IndexedQuestion}
+   \QuestionContentUnits{controllers}
+   \QuestionCourses{TK8117}
+   \QuestionType{multiple choice}
+   \QuestionBody{
+       
+Given the discrete time system:
+\begin{align*}
+	\mathbf{x}[k+1] =& \left[
+	\begin{array}{ccc}
+	 1 & -0.5 & 0 \\
+	 0 & 0.5 & 1  \\
+	0 & 0 & 1 \end{array}
+	\right] \mathbf{x}[k] +
+\left[
+	\begin{array}{ccc}
+	 1 & 0 & 1 \\ 0 & 0 & 0 \\ 0 & 1 & -1 
+	\end{array}
+	\right] \mathbf{u}[k] 
+\end{align*}
+What is the length of the shortest input sequence that can transfer the system from any state to any desired state? 
+
+       }% DO NOT INCLUDE FIGURES HERE
+       \QuestionPotentialAnswers{
+            \answer  1
+            \correctanswer  2
+            \answer  3
+            \answer  4
+            \answer  No sequence of limited length can do this in general
+       } % ONLY IF TYPE = MULTIPLE CHOICE
+       \QuestionAuthorsEmails{ivanig@stud.ntnu.no}
+       \QuestionLanguage{English}
+       %\begin{IndexedSolution}
+           %\SolutionContentUnits{controllers}
+           %\SolutionBody{
+% 
+%           }
+           %\SolutionAuthorsEmail{fivanig@stud.ntnu.no}
+       %\end{IndexedSolution}
+\end{IndexedQuestion}
+
+
+%question 6
+\begin{IndexedQuestion}
+   \QuestionContentUnits{controllers}
+   \QuestionCourses{TK8117}
+   \QuestionType{multiple choice}
+   \QuestionBody{
+       Given the discrete time system:
+\begin{align*}
+	\mathbf{x}[k+1] =& \overbrace{\left[
+	\begin{array}{ccc}
+	 0.9 & 0.2  \\
+	 -0.5 & 0.9  \end{array}
+	\right]}^\mathbf{A} \mathbf{x}[k] + 
+ \overbrace{\left[
+	\begin{array}{c}
+	 1 \\ 0 
+	\end{array}
+	\right]}^\mathbf{B} u[k] + 
+ \overbrace{\left[
+	\begin{array}{ccc}
+	 1 & 0 \\ 0 & 1 \end{array}
+	\right]}^\mathbf{G} \mathbf{w}[k] \\
+	y[k] =& \overbrace{\left[
+	\begin{array}{ccc}
+	 1 & 0
+	\end{array}
+	\right]}^\mathbf{C} \mathbf{x}[k] + v[k]
+\end{align*}
+with the following disturbance and noise properties:
+\begin{align*}
+	\mathbf{E}[\mathbf{w}[k]] =& 0, \quad \mathbf{E}[\mathbf{w}[k]\mathbf{w}[l]] = \delta[k,l]\mathbf{Q} \\
+	\mathbf{E}[v[k]] =& 0, \quad \mathbf{E}[v[k]v[l]] = \delta[k,l]\sigma^2
+\end{align*}
+
+You are using a discrete time Kalman filter to estimate the states of the system. If the apriori covariance matrix at time $k$ is $P^-[k] = \left[ \begin{array}{cc} 2 & 1 \\ 1 & 2 \end{array} \right]$, what is the Kalman gain at time $k$?
+
+       }% DO NOT INCLUDE FIGURES HERE
+       \QuestionPotentialAnswers{
+            \answer  $\mathbf{L}[k] = \left[ \begin{array}{c} 1 + 2\mathbf{Q}^{-1} \\ 0.5 + 2\mathbf{Q}^{-1}  \end{array} \right] $
+            \answer  $\mathbf{L}[k] = \left[ \begin{array}{c} 1 \\ 2 \end{array} \right] $
+            \answer  $\mathbf{L}[k] = \left[ \begin{array}{c} 1/(2 + \sigma^2) \\ 2/(2 + \sigma^2) \end{array} \right] $
+            \correctanswer  $\mathbf{L}[k] = \left[ \begin{array}{c} 2/(2 + \sigma^2) \\ 1/(2 + \sigma^2) \end{array} \right] $
+       } % ONLY IF TYPE = MULTIPLE CHOICE
+       \QuestionAuthorsEmails{ivanig@stud.ntnu.no}
+       \QuestionLanguage{English}
+       %\begin{IndexedSolution}
+           %\SolutionContentUnits{controllers}
+           %\SolutionBody{
+% 
+%           }
+           %\SolutionAuthorsEmail{fivanig@stud.ntnu.no}
+       %\end{IndexedSolution}
+\end{IndexedQuestion}
+
+
+%question 7
+\begin{IndexedQuestion}
+   \QuestionContentUnits{controllers}
+   \QuestionCourses{TK8117}
+   \QuestionType{multiple choice}
+   \QuestionBody{
+       
+Given the system matrix:
+\begin{equation*}
+\mathbf{A} = \left[ \begin{array}{ccc} 0 & 0 & 0 \\ 0 & -0.1 & 0 \\ -1 & 1 & 0  \end{array} \right]
+\end{equation*}
+
+Which statement is correct about the internal stability and the input-output stability of the system?
+
+       }% DO NOT INCLUDE FIGURES HERE
+       \QuestionPotentialAnswers{
+            \answer  Unstable both internally and BIBO
+            \answer  Internally unstable, but BIBO stable
+            \answer  Stable both internally and BIBO
+            \correctanswer  Internally unstable, and we need more information to determine BIBO stability
+            \answer  Internally stable, and we need more information to determine BIBO stability
+       } % ONLY IF TYPE = MULTIPLE CHOICE
+       \QuestionAuthorsEmails{ivanig@stud.ntnu.no}
+       \QuestionLanguage{English}
+       %\begin{IndexedSolution}
+           %\SolutionContentUnits{controllers}
+           %\SolutionBody{
+% 
+%           }
+           %\SolutionAuthorsEmail{fivanig@stud.ntnu.no}
+       %\end{IndexedSolution}
+\end{IndexedQuestion}
+
+
+%question 8
+\begin{IndexedQuestion}
+   \QuestionContentUnits{controllers}
+   \QuestionCourses{TK8117}
+   \QuestionType{multiple choice}
+   \QuestionBody{
+       
+Given the following continuous time system :
+\begin{equation*}
+	\mathbf{\dot x} = \overbrace{\left[
+	\begin{array}{ccc}
+	 2 & -1  \\
+	 0 & -1 \\
+	\end{array}
+	\right]}^\mathbf{A} \mathbf{x} + 
+ \overbrace{\left[
+	\begin{array}{cc}
+	 1 \\ 1
+	\end{array}
+	\right]}^\mathbf{B} u, \quad 
+	y = \overbrace{\left[
+	\begin{array}{ccc}
+	 0 & 1
+	\end{array}
+	\right]}^\mathbf{C} \mathbf{x}
+\end{equation*}
+
+
+Is this system:
+
+       }% DO NOT INCLUDE FIGURES HERE
+       \QuestionPotentialAnswers{
+            \answer  Unstable (internally and in the input-output sense)
+            \answer  Exponentially stable
+            \correctanswer  Marginally stable 
+            \answer  BIBO stable
+       } % ONLY IF TYPE = MULTIPLE CHOICE
+       \QuestionAuthorsEmails{ivanig@stud.ntnu.no}
+       \QuestionLanguage{English}
+       %\begin{IndexedSolution}
+           %\SolutionContentUnits{controllers}
+           %\SolutionBody{
+% 
+%           }
+           %\SolutionAuthorsEmail{fivanig@stud.ntnu.no}
+       %\end{IndexedSolution}
+\end{IndexedQuestion}
+
+
+%question 9
+\begin{IndexedQuestion}
+   \QuestionContentUnits{controllers}
+   \QuestionCourses{TK8117}
+   \QuestionType{multiple choice}
+   \QuestionBody{
+       You need to model a noise process that has the spectral density function $S(\omega) = \frac{\omega^2}{\omega^2 + \omega_0^2}$. Which of the following state space models, given a unity white noise input, will output a signal with the spectral density function matching $S(\omega)$?
+
+       }% DO NOT INCLUDE FIGURES HERE
+       \QuestionPotentialAnswers{
+            \answer  $\dot x = -\omega_0 x + u, \quad y = -\omega_0 x$
+            \answer  $\dot x = -\omega_0 x + u, \quad y = -\omega_0 x - u$
+            \correctanswer  $\dot x = -\omega_0 x + u, \quad y = -\omega_0 x + u$
+            \answer  $\dot x = -\omega_0 x , \quad y = -\omega_0 x + u$
+       } % ONLY IF TYPE = MULTIPLE CHOICE
+       \QuestionAuthorsEmails{ivanig@stud.ntnu.no}
+       \QuestionLanguage{English}
+       %\begin{IndexedSolution}
+           %\SolutionContentUnits{controllers}
+           %\SolutionBody{
+% 
+%           }
+           %\SolutionAuthorsEmail{fivanig@stud.ntnu.no}
+       %\end{IndexedSolution}
+\end{IndexedQuestion}
+
+
+%question 10
+\begin{IndexedQuestion}
+   \QuestionContentUnits{controllers}
+   \QuestionCourses{TK8117}
+   \QuestionType{multiple choice}
+   \QuestionBody{
+       \begin{equation*}
+\dot x(t) = a x(t) + u(t), \quad a>0
+%	\mathbf{\dot x} = \overbrace{\left[
+%	\begin{array}{ccc}
+%	 -1 & 1  \\
+%	 0 & 0.5
+%	\end{array}
+%	\right]}^\mathbf{A} \mathbf{x} + 
+% \overbrace{\left[
+%	\begin{array}{cc}
+%	 0 \\ 1
+%	\end{array}
+%	\right]}^\mathbf{B} u
+\end{equation*}
+This system is to be controlled using a state feedback $u=-kx$. The feedback gain coefficient is to be chosen to minimize this objective function:
+\begin{equation*}
+	J = \int_0^\infty q x(t)^2 + ru(t)^2 dt
+\end{equation*}
+%where $\mathbf{Q}=\left[ \begin{array}{cc} 1 & 0 \\ 0 & 1\end{array} \right]$. 
+
+What (if any) eigenvalue does the closed-loop system approach when $q$ stays constant and the input cost increases toward infinity, i.e. $r \rightarrow \infty$?
+
+       }% DO NOT INCLUDE FIGURES HERE
+       \QuestionPotentialAnswers{
+            \answer  Unstable (internally and in the input-output sense)
+            \answer  Exponentially stable
+            \correctanswer  Marginally stable 
+            \answer  BIBO stable, but not internally stable
+            \answer  Stability properties depend on $a$
+       } % ONLY IF TYPE = MULTIPLE CHOICE
+       \QuestionAuthorsEmails{ivanig@stud.ntnu.no}
+       \QuestionLanguage{English}
+       %\begin{IndexedSolution}
+           %\SolutionContentUnits{controllers}
+           %\SolutionBody{
+% 
+%           }
+           %\SolutionAuthorsEmail{fivanig@stud.ntnu.no}
+       %\end{IndexedSolution}
+\end{IndexedQuestion}
+
+
+%question 11
+\begin{IndexedQuestion}
+   \QuestionContentUnits{controllers}
+   \QuestionCourses{TK8117}
+   \QuestionType{multiple choice}
+   \QuestionBody{
+       
+Given the following continuous time system :
+\begin{align*}
+	\mathbf{\dot x} =& \overbrace{\left[
+	\begin{array}{ccc}
+	 -1 & \alpha  \\
+	 0 & -0.5
+	\end{array}
+	\right]}^\mathbf{A} \mathbf{x} + 
+ \overbrace{\left[
+	\begin{array}{cc}
+	 0 \\ 1
+	\end{array}
+	\right]}^\mathbf{B} u \\
+	y =& \overbrace{\left[
+	\begin{array}{cc}
+	 1 & 0
+	\end{array}
+	\right]}^\mathbf{C} \mathbf{x}
+\end{align*}
+
+where $\alpha \neq 0$. You want to estimate the state values using an observer:
+\begin{equation*}
+\mathbf{\hat {\dot x}} = \mathbf{A \hat x} + \mathbf{B}u + \mathbf{L}(y - \mathbf{C \hat x})
+\end{equation*}
+
+What gain matrix $\mathbf{L}$ should you use for the estimation error dynamics to have both eigenvalues equal to -5?
+
+       }% DO NOT INCLUDE FIGURES HERE
+       \QuestionPotentialAnswers{
+            \answer  No choice of $\mathbf{L}$ will achieve this.
+            \answer  $\mathbf{L} = \left[ \begin{array}{c}8.5 \\ -4.75/\alpha \end{array} \right] $
+            \answer  $\mathbf{L} = \left[ \begin{array}{c}8.5 \\ 20.25 \alpha \end{array} \right] $
+            \answer  $\mathbf{L} = \left[ \begin{array}{c}10.5 \\ 20.25 / \alpha \end{array} \right] $
+            \correctanswer  $\mathbf{L} = \left[ \begin{array}{c}8.5 \\ 20.25/\alpha \end{array} \right] $
+       } % ONLY IF TYPE = MULTIPLE CHOICE
+       \QuestionAuthorsEmails{ivanig@stud.ntnu.no}
+       \QuestionLanguage{English}
+       %\begin{IndexedSolution}
+           %\SolutionContentUnits{controllers}
+           %\SolutionBody{
+% 
+%           }
+           %\SolutionAuthorsEmail{fivanig@stud.ntnu.no}
+       %\end{IndexedSolution}
+\end{IndexedQuestion}
+
+
+%question 12
+\begin{IndexedQuestion}
+   \QuestionContentUnits{controllers}
+   \QuestionCourses{TK8117}
+   \QuestionType{multiple choice}
+   \QuestionBody{
+       
+Given the following continuous time system :
+\begin{align*}
+	\mathbf{\dot x} =& \overbrace{\left[
+	\begin{array}{ccc}
+	 -1 & \alpha  \\
+	 0 & \beta
+	\end{array}
+	\right]}^\mathbf{A} \mathbf{x} + 
+ \overbrace{\left[
+	\begin{array}{cc}
+	 0 \\ 1
+	\end{array}
+	\right]}^\mathbf{B} u \\
+	y =& \overbrace{\left[
+	\begin{array}{cc}
+	 1 & 1
+	\end{array}
+	\right]}^\mathbf{C} \mathbf{x}
+\end{align*}
+
+What are the equations for this system on controllable canonical form?
+
+       }% DO NOT INCLUDE FIGURES HERE
+       \QuestionPotentialAnswers{
+            \answer  $\mathbf{\dot x} =  \left[ \begin{array}{cc} 2-\beta & -1 \\ 1 & 0 \end{array} \right] \mathbf{x} + \left[ \begin{array}{c} 1 \\ 0 \end{array} \right] u, \quad y = \left[ \begin{array}{cc}  1 & \alpha \end{array} \right] \mathbf{x}$
+            \answer   $\mathbf{\dot x} =  \left[ \begin{array}{cc} 1-\beta & -\beta \\ 1 & 0 \end{array} \right] \mathbf{x} + \left[ \begin{array}{c} 1 \\ 0 \end{array} \right] u, \quad y = \left[ \begin{array}{cc}  1 & \alpha\end{array} \right] \mathbf{x}$
+            \correctanswer  $\mathbf{\dot x} =  \left[ \begin{array}{cc} \beta-1 & \beta \\ 1 & 0 \end{array} \right] \mathbf{x} + \left[ \begin{array}{c} 1 \\ 0 \end{array} \right] u, \quad y = \left[ \begin{array}{cc}  1 & 1+\alpha\end{array} \right] \mathbf{x}$
+            \answer  $\mathbf{\dot x} =  \left[ \begin{array}{cc} \beta-1 & -2\alpha \\ 1 & 0 \end{array} \right] \mathbf{x} + \left[ \begin{array}{c} 1 \\ 0 \end{array} \right] u, \quad y = \left[ \begin{array}{cc}  1 & 1+\alpha \end{array} \right] \mathbf{x}$
+            \answer  $\mathbf{\dot x} =  \left[ \begin{array}{cc} \beta & -1 \\ 1 & 0 \end{array} \right] \mathbf{x} + \left[ \begin{array}{c} 1 \\ 0 \end{array} \right] u, \quad y = \left[ \begin{array}{cc}  1+\alpha & 1 \end{array} \right] \mathbf{x}$
+       } % ONLY IF TYPE = MULTIPLE CHOICE
+       \QuestionAuthorsEmails{ivanig@stud.ntnu.no}
+       \QuestionLanguage{English}
+       %\begin{IndexedSolution}
+           %\SolutionContentUnits{controllers}
+           %\SolutionBody{
+% 
+%           }
+           %\SolutionAuthorsEmail{fivanig@stud.ntnu.no}
+       %\end{IndexedSolution}
+\end{IndexedQuestion}
+
+
