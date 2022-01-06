@@ -1,0 +1,5 @@
+Unstable (internally and in the input-output sense)
+Exponentially stable
+Marginally stable
+BIBO stable, but not internally stable
+Stability properties depend on $a$
