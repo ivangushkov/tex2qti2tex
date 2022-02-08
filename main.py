@@ -1,4 +1,4 @@
-import t2q2tlib
+from tex2qti import *
 import linecache
 
 def main():

@@ -15,7 +15,7 @@ def get_question_type(lines):
 
     for element in lines:
         if "\QuestionType" in element:
-            q_type = element.strip().strip("}")[start:len(element)] #TODO format the element
+            q_type = element.strip().strip("}")[start:len(element)]
             return q_type # works
 
 
@@ -74,17 +74,39 @@ def format_answers(ans_lst):
     return ans_lst, correct_index # works
 
 
+def extract_elements(lines):
+    # Input: the lines of a question
+    # Output: all the principle elements of a question
+    q_type = get_question_type(lines)
+    q_body = get_question_body(lines)
+    ans = get_answers(lines)
+    ans, correct_i = format_answers(ans)
+
+    return q_type, q_body, ans, correct_i
+
+def write_txt_mc_file(write_to_filename ,question_body, answers, correct_index):
+    f = open(write_to_filename, "w")
+
+    string = f"{question_body}\n"
+
+    for i in range(len(answers)):
+        if i == correct_index:
+            string += f"*{answers[i]}\n"
+        else:
+            string += f"{answers[i]}\n"
+
+    f.write(string)
+    f.close()
+
 def test_function(file):
     
     f = open(file, "r")
-    lines = f.readlines()
-    
-    result_file = open("test_result.txt", "w")
 
-    result_file.close()
+    lines = f.readlines()
+    q_type , q_bod , ans , correct_i = extract_elements(lines)
+    write_txt_mc_file("test_result.txt", q_bod, ans, correct_i)
+
     f.close()
 
 test_function("test.txt")
 
-#def write_txt_mc_file(write_to_filename ,question_body, answers, correct_index):
-    # TODO figure out from the text2qti parsers how one does this
