@@ -1,0 +1,1241 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<questestinterop xmlns="http://www.imsglobal.org/xsd/ims_qtiasiv1p2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.imsglobal.org/xsd/ims_qtiasiv1p2 http://www.imsglobal.org/xsd/ims_qtiasiv1p2p1.xsd">
+  <assessment ident="text2qti_assessment_1740a3a36b33897e09c708909f909675c8f37fd65f60a9aca44b8ecec1b5e606" title="Quiz">
+    <qtimetadata>
+      <qtimetadatafield>
+        <fieldlabel>cc_maxattempts</fieldlabel>
+        <fieldentry>1</fieldentry>
+      </qtimetadatafield>
+    </qtimetadata>
+    <section ident="root_section">
+      <item ident="text2qti_question_8fd8346bd654f30b4052faca96bfc1437d065fddaa1eb93dc3a3158582fdc715" title="Question">
+        <itemmetadata>
+          <qtimetadata>
+            <qtimetadatafield>
+              <fieldlabel>question_type</fieldlabel>
+              <fieldentry>multiple_answers_question</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>points_possible</fieldlabel>
+              <fieldentry>1</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>original_answer_ids</fieldlabel>
+              <fieldentry>text2qti_choice_75fbd73dac38a0f54acd5e08167c22c314f4e71f2d07232c6bfa587eac657801,text2qti_choice_5679e8eb49d834c17e3cd443c260d7947feaa11a6d4f1cb17ec1ee5c386a0525,text2qti_choice_b8fdf3019848c61f9b9f4306f874954f196415d59ef264b74bd18ffa6b0de1a9,text2qti_choice_45578593ad3cdb9ff955b47374f9f9bcc7935647e1c08fc7da2f555a12c052dd,text2qti_choice_c1063dadcef7908b30dce4e30e1476decd4a50a1c6009520fbc6fbbde5267dff</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>assessment_question_identifierref</fieldlabel>
+              <fieldentry>text2qti_question_ref_8fd8346bd654f30b4052faca96bfc1437d065fddaa1eb93dc3a3158582fdc715</fieldentry>
+            </qtimetadatafield>
+          </qtimetadata>
+        </itemmetadata>
+        <presentation>
+          <material>
+            <mattext texttype="text/html">&lt;p&gt;$$\mathbf{\dot x} = \overbrace{\left[    \begin{array}{ccc}
+         -1 &amp;amp; 0 &amp;amp; a  \
+         0 &amp;amp; 0 &amp;amp; 0 \
+        0 &amp;amp; 0 &amp;amp; 0
+        \end{array}
+        \right]}^\mathbf{A} \mathbf{x} +
+     \overbrace{\left[
+        \begin{array}{cc}
+         1 &amp;amp; 0 \ 0 &amp;amp; 1 \ 0 &amp;amp; 0
+        \end{array}
+        \right]}^\mathbf{B} \mathbf{u}, \quad
+        y = \overbrace{\left[
+        \begin{array}{ccc}
+         1 &amp;amp; 0 &amp;amp; 0
+        \end{array}
+        \right]}^\mathbf{C} \mathbf{x}$$ Is this system:&lt;/p&gt;</mattext>
+          </material>
+          <response_lid ident="response1" rcardinality="Multiple">
+            <render_choice>
+              <response_label ident="text2qti_choice_75fbd73dac38a0f54acd5e08167c22c314f4e71f2d07232c6bfa587eac657801">
+                <material>
+                  <mattext texttype="text/html">&lt;p&gt;Unstable (internally and in the input-output sense)&lt;/p&gt;</mattext>
+                </material>
+              </response_label>
+              <response_label ident="text2qti_choice_5679e8eb49d834c17e3cd443c260d7947feaa11a6d4f1cb17ec1ee5c386a0525">
+                <material>
+                  <mattext texttype="text/html">&lt;p&gt;Exponentially stable&lt;/p&gt;</mattext>
+                </material>
+              </response_label>
+              <response_label ident="text2qti_choice_b8fdf3019848c61f9b9f4306f874954f196415d59ef264b74bd18ffa6b0de1a9">
+                <material>
+                  <mattext texttype="text/html">&lt;p&gt;Marginally stable&lt;/p&gt;</mattext>
+                </material>
+              </response_label>
+              <response_label ident="text2qti_choice_45578593ad3cdb9ff955b47374f9f9bcc7935647e1c08fc7da2f555a12c052dd">
+                <material>
+                  <mattext texttype="text/html">&lt;p&gt;BIBO stable, but not internally stable&lt;/p&gt;</mattext>
+                </material>
+              </response_label>
+              <response_label ident="text2qti_choice_c1063dadcef7908b30dce4e30e1476decd4a50a1c6009520fbc6fbbde5267dff">
+                <material>
+                  <mattext texttype="text/html">&lt;p&gt;Stability properties depend on &lt;img class="equation_image" title="a" src="/a" alt="LaTeX: a" data-equation-content="a"&gt;&lt;/p&gt;</mattext>
+                </material>
+              </response_label>
+            </render_choice>
+          </response_lid>
+        </presentation>
+        <resprocessing>
+          <outcomes>
+            <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+          </outcomes>
+          <respcondition continue="No">
+            <conditionvar>
+              <and>
+                <not>
+                  <varequal respident="response1">text2qti_choice_75fbd73dac38a0f54acd5e08167c22c314f4e71f2d07232c6bfa587eac657801</varequal>
+                </not>
+                <not>
+                  <varequal respident="response1">text2qti_choice_5679e8eb49d834c17e3cd443c260d7947feaa11a6d4f1cb17ec1ee5c386a0525</varequal>
+                </not>
+                <varequal respident="response1">text2qti_choice_b8fdf3019848c61f9b9f4306f874954f196415d59ef264b74bd18ffa6b0de1a9</varequal>
+                <not>
+                  <varequal respident="response1">text2qti_choice_45578593ad3cdb9ff955b47374f9f9bcc7935647e1c08fc7da2f555a12c052dd</varequal>
+                </not>
+                <not>
+                  <varequal respident="response1">text2qti_choice_c1063dadcef7908b30dce4e30e1476decd4a50a1c6009520fbc6fbbde5267dff</varequal>
+                </not>
+              </and>
+            </conditionvar>
+            <setvar action="Set" varname="SCORE">100</setvar>
+          </respcondition>
+        </resprocessing>
+      </item>
+      <item ident="text2qti_question_0c6df80435a22dcb94b1f5b6f2ce9e72a43e70ef5878c621328007ee1404f09f" title="Question">
+        <itemmetadata>
+          <qtimetadata>
+            <qtimetadatafield>
+              <fieldlabel>question_type</fieldlabel>
+              <fieldentry>multiple_answers_question</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>points_possible</fieldlabel>
+              <fieldentry>1</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>original_answer_ids</fieldlabel>
+              <fieldentry>text2qti_choice_f2bb90af4c2a95922fe1f31707a58aca3b7424634429bd6c97053e371fd12d03,text2qti_choice_ddefa3c77476b0c6794b42d5a733ff72cd2d6239e8d8581bf502fb868ffae575,text2qti_choice_6e072fead049aed34fd52d47693702241835e8957077c9849d21191dbbbe7562,text2qti_choice_ec5a15410b879d5b52c965ad6991daac443a39eef7a1a08dc950c85db80b6fae</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>assessment_question_identifierref</fieldlabel>
+              <fieldentry>text2qti_question_ref_0c6df80435a22dcb94b1f5b6f2ce9e72a43e70ef5878c621328007ee1404f09f</fieldentry>
+            </qtimetadatafield>
+          </qtimetadata>
+        </itemmetadata>
+        <presentation>
+          <material>
+            <mattext texttype="text/html">&lt;p&gt;Given the two continuous time systems: $$\begin{aligned}\label{sys1a}
+        \mathbf{\dot x} =&amp;amp; \left[
+        \begin{array}{ccc}
+          -1 &amp;amp; -1 \ 0 &amp;amp; -2
+        \end{array}
+        \right] \mathbf{x} + \left[
+        \begin{array}{cc}
+         1 \  0
+        \end{array}
+        \right] u_1, \quad
+        y_1 = \left[ \begin{array}{cc}
+         1 &amp;amp; 0
+        \end{array}
+        \right] \mathbf{x} \
+        \mathbf{\dot z} =&amp;amp; \left[
+        \begin{array}{ccc}
+         -1 &amp;amp; 0  \ 0 &amp;amp; -2
+        \end{array}
+        \right] \mathbf{z} + \left[
+        \begin{array}{cc}
+         1 \ 0
+        \end{array}
+        \right] u_2, \quad
+        y_2 = \left[ \begin{array}{cc}
+         1 &amp;amp; 1
+        \end{array}
+        \right] \mathbf{z}\end{aligned}$$&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;Are these systems:
+&lt;/code&gt;&lt;/pre&gt;</mattext>
+          </material>
+          <response_lid ident="response1" rcardinality="Multiple">
+            <render_choice>
+              <response_label ident="text2qti_choice_f2bb90af4c2a95922fe1f31707a58aca3b7424634429bd6c97053e371fd12d03">
+                <material>
+                  <mattext texttype="text/html">&lt;p&gt;Unrelated&lt;/p&gt;</mattext>
+                </material>
+              </response_label>
+              <response_label ident="text2qti_choice_ddefa3c77476b0c6794b42d5a733ff72cd2d6239e8d8581bf502fb868ffae575">
+                <material>
+                  <mattext texttype="text/html">&lt;p&gt;Algebraically equivalent (second system is diagonalization of first)&lt;/p&gt;</mattext>
+                </material>
+              </response_label>
+              <response_label ident="text2qti_choice_6e072fead049aed34fd52d47693702241835e8957077c9849d21191dbbbe7562">
+                <material>
+                  <mattext texttype="text/html">&lt;p&gt;Zero-state equivalent but not algebraically equivalent&lt;/p&gt;</mattext>
+                </material>
+              </response_label>
+              <response_label ident="text2qti_choice_ec5a15410b879d5b52c965ad6991daac443a39eef7a1a08dc950c85db80b6fae">
+                <material>
+                  <mattext texttype="text/html">&lt;p&gt;Dual systems&lt;/p&gt;</mattext>
+                </material>
+              </response_label>
+            </render_choice>
+          </response_lid>
+        </presentation>
+        <resprocessing>
+          <outcomes>
+            <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+          </outcomes>
+          <respcondition continue="No">
+            <conditionvar>
+              <and>
+                <not>
+                  <varequal respident="response1">text2qti_choice_f2bb90af4c2a95922fe1f31707a58aca3b7424634429bd6c97053e371fd12d03</varequal>
+                </not>
+                <varequal respident="response1">text2qti_choice_ddefa3c77476b0c6794b42d5a733ff72cd2d6239e8d8581bf502fb868ffae575</varequal>
+                <not>
+                  <varequal respident="response1">text2qti_choice_6e072fead049aed34fd52d47693702241835e8957077c9849d21191dbbbe7562</varequal>
+                </not>
+                <not>
+                  <varequal respident="response1">text2qti_choice_ec5a15410b879d5b52c965ad6991daac443a39eef7a1a08dc950c85db80b6fae</varequal>
+                </not>
+              </and>
+            </conditionvar>
+            <setvar action="Set" varname="SCORE">100</setvar>
+          </respcondition>
+        </resprocessing>
+      </item>
+      <item ident="text2qti_question_ad5c4228766f07935a0d1b7b0aa9b9e44eddc08e9a9a566bd3065f20ac1059e1" title="Question">
+        <itemmetadata>
+          <qtimetadata>
+            <qtimetadatafield>
+              <fieldlabel>question_type</fieldlabel>
+              <fieldentry>multiple_answers_question</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>points_possible</fieldlabel>
+              <fieldentry>1</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>original_answer_ids</fieldlabel>
+              <fieldentry>text2qti_choice_83b4e3d857a7175ad9a53c38db1206937a47c8ef27b92b180e35a5d636e0ebc3,text2qti_choice_8934c7971f2b5589b3e9bbb0b4c15720ea706f8d8575b0aefd4057a43adddb3b,text2qti_choice_fd2a4cf4ea359f4d2409b81d28562d0041e2282066754c8ca738d8c4e07e6a20,text2qti_choice_42dc91d890c9cfd0bad80e993719055da4b237a6774878adec32359bd19692aa</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>assessment_question_identifierref</fieldlabel>
+              <fieldentry>text2qti_question_ref_ad5c4228766f07935a0d1b7b0aa9b9e44eddc08e9a9a566bd3065f20ac1059e1</fieldentry>
+            </qtimetadatafield>
+          </qtimetadata>
+        </itemmetadata>
+        <presentation>
+          <material>
+            <mattext texttype="text/html">&lt;p&gt;Given the two continuous time systems: $$\begin{aligned}    \mathbf{\dot x} =&amp;amp; \left[
+        \begin{array}{ccc}
+         1 &amp;amp; 0 &amp;amp; 0 \ 1 &amp;amp; -1 &amp;amp; 0 \ 0 &amp;amp; 0 &amp;amp; 1
+        \end{array}
+        \right] \mathbf{x} + \left[
+        \begin{array}{cc}
+         1 \  0 \ 0
+        \end{array}
+        \right] u_1, \quad
+        y_1 = \left[ \begin{array}{ccc}
+         1 &amp;amp; 1 &amp;amp; 0
+        \end{array}
+        \right] \mathbf{x} \
+        \mathbf{\dot z} =&amp;amp; \left[
+        \begin{array}{ccc}
+         0 &amp;amp; 1  \ 1 &amp;amp; 0
+        \end{array}
+        \right] \mathbf{z} + \left[
+        \begin{array}{cc}
+         1 \ 0
+        \end{array}
+        \right] u_2, \quad
+        y_2 = \left[ \begin{array}{cc}
+         1 &amp;amp; 2
+        \end{array}
+        \right] \mathbf{z}\end{aligned}$$&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;Are these systems:
+&lt;/code&gt;&lt;/pre&gt;</mattext>
+          </material>
+          <response_lid ident="response1" rcardinality="Multiple">
+            <render_choice>
+              <response_label ident="text2qti_choice_83b4e3d857a7175ad9a53c38db1206937a47c8ef27b92b180e35a5d636e0ebc3">
+                <material>
+                  <mattext texttype="text/html">&lt;p&gt;Unrelated&lt;/p&gt;</mattext>
+                </material>
+              </response_label>
+              <response_label ident="text2qti_choice_8934c7971f2b5589b3e9bbb0b4c15720ea706f8d8575b0aefd4057a43adddb3b">
+                <material>
+                  <mattext texttype="text/html">&lt;p&gt;Algebraically equivalent&lt;/p&gt;</mattext>
+                </material>
+              </response_label>
+              <response_label ident="text2qti_choice_fd2a4cf4ea359f4d2409b81d28562d0041e2282066754c8ca738d8c4e07e6a20">
+                <material>
+                  <mattext texttype="text/html">&lt;p&gt;Zero-state equivalent but not algebraically equivalent&lt;/p&gt;</mattext>
+                </material>
+              </response_label>
+              <response_label ident="text2qti_choice_42dc91d890c9cfd0bad80e993719055da4b237a6774878adec32359bd19692aa">
+                <material>
+                  <mattext texttype="text/html">&lt;p&gt;Dual systems&lt;/p&gt;</mattext>
+                </material>
+              </response_label>
+            </render_choice>
+          </response_lid>
+        </presentation>
+        <resprocessing>
+          <outcomes>
+            <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+          </outcomes>
+          <respcondition continue="No">
+            <conditionvar>
+              <and>
+                <not>
+                  <varequal respident="response1">text2qti_choice_83b4e3d857a7175ad9a53c38db1206937a47c8ef27b92b180e35a5d636e0ebc3</varequal>
+                </not>
+                <not>
+                  <varequal respident="response1">text2qti_choice_8934c7971f2b5589b3e9bbb0b4c15720ea706f8d8575b0aefd4057a43adddb3b</varequal>
+                </not>
+                <varequal respident="response1">text2qti_choice_fd2a4cf4ea359f4d2409b81d28562d0041e2282066754c8ca738d8c4e07e6a20</varequal>
+                <not>
+                  <varequal respident="response1">text2qti_choice_42dc91d890c9cfd0bad80e993719055da4b237a6774878adec32359bd19692aa</varequal>
+                </not>
+              </and>
+            </conditionvar>
+            <setvar action="Set" varname="SCORE">100</setvar>
+          </respcondition>
+        </resprocessing>
+      </item>
+      <item ident="text2qti_question_2b8496d5f53b557e8c2ad649d69222ec3213e81b7dcb20250ab1ed7d05f9bc82" title="Question">
+        <itemmetadata>
+          <qtimetadata>
+            <qtimetadatafield>
+              <fieldlabel>question_type</fieldlabel>
+              <fieldentry>multiple_answers_question</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>points_possible</fieldlabel>
+              <fieldentry>1</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>original_answer_ids</fieldlabel>
+              <fieldentry>text2qti_choice_04ed244f588c9ef1cc5e87fcf4df890cf063db2c01ebc705f975bd3c74a65047,text2qti_choice_3b4bdd28059f41c0eacf14cccac426ff4f3675fc7cb5d0bf66bae3afe33cf565,text2qti_choice_00affbb2ecc7dff22a3008542f604ee4d23428e1b984357d0a4b9e3c3d378176,text2qti_choice_26be31a92245d0bafe60b0c74e226ee5bf3a60c6b8fd5cd908706757f204ba1e</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>assessment_question_identifierref</fieldlabel>
+              <fieldentry>text2qti_question_ref_2b8496d5f53b557e8c2ad649d69222ec3213e81b7dcb20250ab1ed7d05f9bc82</fieldentry>
+            </qtimetadatafield>
+          </qtimetadata>
+        </itemmetadata>
+        <presentation>
+          <material>
+            <mattext texttype="text/html">&lt;p&gt;Given the continuous time system: $$\begin{aligned}    \mathbf{\dot x} =&amp;amp; \left[
+        \begin{array}{ccc}
+          -1 &amp;amp; \omega \ 0 &amp;amp; 1
+        \end{array}
+        \right] \mathbf{x} + \left[
+        \begin{array}{cc}
+         0 \  1
+        \end{array}
+        \right] u, \quad
+        y = \left[ \begin{array}{cc}
+         1 &amp;amp; 0
+        \end{array}
+        \right] \mathbf{x} \end{aligned}$$ Using a state feedback
+    &lt;img class="equation_image" title="u = -\left[ \begin{array}{cc} k_1 &amp;amp; k_2 \end{array} \right] \mathbf{x}" src="/u%2520%253D%2520-%255Cleft%255B%2520%255Cbegin%257Barray%257D%257Bcc%257D%2520k_1%2520%2526%2520k_2%2520%255Cend%257Barray%257D%2520%255Cright%255D%2520%255Cmathbf%257Bx%257D" alt="LaTeX: u = -\left[ \begin{array}{cc} k_1 &amp;amp; k_2 \end{array} \right] \mathbf{x}" data-equation-content="u = -\left[ \begin{array}{cc} k_1 &amp;amp; k_2 \end{array} \right] \mathbf{x}"&gt;,
+    which values of &lt;img class="equation_image" title="k_1" src="/k_1" alt="LaTeX: k_1" data-equation-content="k_1"&gt; and &lt;img class="equation_image" title="k_2" src="/k_2" alt="LaTeX: k_2" data-equation-content="k_2"&gt; place the closed-loop system&amp;rsquo;s poles in
+    -1 and -0.5?&lt;/p&gt;</mattext>
+          </material>
+          <response_lid ident="response1" rcardinality="Multiple">
+            <render_choice>
+              <response_label ident="text2qti_choice_04ed244f588c9ef1cc5e87fcf4df890cf063db2c01ebc705f975bd3c74a65047">
+                <material>
+                  <mattext texttype="text/html">&lt;p&gt;&lt;img class="equation_image" title="k_1=0" src="/k_1%253D0" alt="LaTeX: k_1=0" data-equation-content="k_1=0"&gt; and &lt;img class="equation_image" title="k_2=1.5" src="/k_2%253D1.5" alt="LaTeX: k_2=1.5" data-equation-content="k_2=1.5"&gt;&lt;/p&gt;</mattext>
+                </material>
+              </response_label>
+              <response_label ident="text2qti_choice_3b4bdd28059f41c0eacf14cccac426ff4f3675fc7cb5d0bf66bae3afe33cf565">
+                <material>
+                  <mattext texttype="text/html">&lt;p&gt;&lt;img class="equation_image" title="k_1=0" src="/k_1%253D0" alt="LaTeX: k_1=0" data-equation-content="k_1=0"&gt; and &lt;img class="equation_image" title="k_2=\frac{1.5}{\omega}" src="/k_2%253D%255Cfrac%257B1.5%257D%257B%255Comega%257D" alt="LaTeX: k_2=\frac{1.5}{\omega}" data-equation-content="k_2=\frac{1.5}{\omega}"&gt;&lt;/p&gt;</mattext>
+                </material>
+              </response_label>
+              <response_label ident="text2qti_choice_00affbb2ecc7dff22a3008542f604ee4d23428e1b984357d0a4b9e3c3d378176">
+                <material>
+                  <mattext texttype="text/html">&lt;p&gt;&lt;img class="equation_image" title="k_1=\frac{0.5}{\omega}" src="/k_1%253D%255Cfrac%257B0.5%257D%257B%255Comega%257D" alt="LaTeX: k_1=\frac{0.5}{\omega}" data-equation-content="k_1=\frac{0.5}{\omega}"&gt; and &lt;img class="equation_image" title="k_2=1" src="/k_2%253D1" alt="LaTeX: k_2=1" data-equation-content="k_2=1"&gt;&lt;/p&gt;</mattext>
+                </material>
+              </response_label>
+              <response_label ident="text2qti_choice_26be31a92245d0bafe60b0c74e226ee5bf3a60c6b8fd5cd908706757f204ba1e">
+                <material>
+                  <mattext texttype="text/html">&lt;p&gt;&lt;img class="equation_image" title="k_1=-1" src="/k_1%253D-1" alt="LaTeX: k_1=-1" data-equation-content="k_1=-1"&gt; and &lt;img class="equation_image" title="k_2=0.5" src="/k_2%253D0.5" alt="LaTeX: k_2=0.5" data-equation-content="k_2=0.5"&gt;&lt;/p&gt;</mattext>
+                </material>
+              </response_label>
+            </render_choice>
+          </response_lid>
+        </presentation>
+        <resprocessing>
+          <outcomes>
+            <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+          </outcomes>
+          <respcondition continue="No">
+            <conditionvar>
+              <and>
+                <varequal respident="response1">text2qti_choice_04ed244f588c9ef1cc5e87fcf4df890cf063db2c01ebc705f975bd3c74a65047</varequal>
+                <not>
+                  <varequal respident="response1">text2qti_choice_3b4bdd28059f41c0eacf14cccac426ff4f3675fc7cb5d0bf66bae3afe33cf565</varequal>
+                </not>
+                <not>
+                  <varequal respident="response1">text2qti_choice_00affbb2ecc7dff22a3008542f604ee4d23428e1b984357d0a4b9e3c3d378176</varequal>
+                </not>
+                <not>
+                  <varequal respident="response1">text2qti_choice_26be31a92245d0bafe60b0c74e226ee5bf3a60c6b8fd5cd908706757f204ba1e</varequal>
+                </not>
+              </and>
+            </conditionvar>
+            <setvar action="Set" varname="SCORE">100</setvar>
+          </respcondition>
+        </resprocessing>
+      </item>
+      <item ident="text2qti_question_2c30a6272a8933e9aa0adac955fc2aae428a27dcbfaa09253923201446ee12fc" title="Question">
+        <itemmetadata>
+          <qtimetadata>
+            <qtimetadatafield>
+              <fieldlabel>question_type</fieldlabel>
+              <fieldentry>multiple_answers_question</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>points_possible</fieldlabel>
+              <fieldentry>1</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>original_answer_ids</fieldlabel>
+              <fieldentry>text2qti_choice_ae9da7ce8db0e7c3f10d5fcc674f1f7d0ee235a7bede5cf52ae72b55fbfc9f8a,text2qti_choice_efafcda302318876c84b584400ce55ba2145e5e3ed49229dc47283c3b7ba541d,text2qti_choice_f05168971c8f93323da68a48e610ed80294ebb5250aa8515e92783b8fa522cce,text2qti_choice_36b4db152cf3853ad2fea33d27979cfd9fd3ce928a30c25e7b141cd8e3ba6352,text2qti_choice_4382865e1771e1daab5311d39be4a3763e056be520fc71868f985302297b2a2b</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>assessment_question_identifierref</fieldlabel>
+              <fieldentry>text2qti_question_ref_2c30a6272a8933e9aa0adac955fc2aae428a27dcbfaa09253923201446ee12fc</fieldentry>
+            </qtimetadatafield>
+          </qtimetadata>
+        </itemmetadata>
+        <presentation>
+          <material>
+            <mattext texttype="text/html">&lt;p&gt;Given the discrete time system: $$\begin{aligned}    \mathbf{x}[k+1] =&amp;amp; \left[
+        \begin{array}{ccc}
+         1 &amp;amp; -0.5 &amp;amp; 0 \
+         0 &amp;amp; 0.5 &amp;amp; 1  \
+        0 &amp;amp; 0 &amp;amp; 1 \end{array}
+        \right] \mathbf{x}[k] +
+    \left[
+        \begin{array}{ccc}
+         1 &amp;amp; 0 &amp;amp; 1 \ 0 &amp;amp; 0 &amp;amp; 0 \ 0 &amp;amp; 1 &amp;amp; -1
+        \end{array}
+        \right] \mathbf{u}[k] \end{aligned}$$ What is the length of the
+    shortest input sequence that can transfer the system from any state to
+    any desired state?&lt;/p&gt;</mattext>
+          </material>
+          <response_lid ident="response1" rcardinality="Multiple">
+            <render_choice>
+              <response_label ident="text2qti_choice_ae9da7ce8db0e7c3f10d5fcc674f1f7d0ee235a7bede5cf52ae72b55fbfc9f8a">
+                <material>
+                  <mattext texttype="text/html">&lt;p&gt;1&lt;/p&gt;</mattext>
+                </material>
+              </response_label>
+              <response_label ident="text2qti_choice_efafcda302318876c84b584400ce55ba2145e5e3ed49229dc47283c3b7ba541d">
+                <material>
+                  <mattext texttype="text/html">&lt;p&gt;2&lt;/p&gt;</mattext>
+                </material>
+              </response_label>
+              <response_label ident="text2qti_choice_f05168971c8f93323da68a48e610ed80294ebb5250aa8515e92783b8fa522cce">
+                <material>
+                  <mattext texttype="text/html">&lt;p&gt;3&lt;/p&gt;</mattext>
+                </material>
+              </response_label>
+              <response_label ident="text2qti_choice_36b4db152cf3853ad2fea33d27979cfd9fd3ce928a30c25e7b141cd8e3ba6352">
+                <material>
+                  <mattext texttype="text/html">&lt;p&gt;4&lt;/p&gt;</mattext>
+                </material>
+              </response_label>
+              <response_label ident="text2qti_choice_4382865e1771e1daab5311d39be4a3763e056be520fc71868f985302297b2a2b">
+                <material>
+                  <mattext texttype="text/html">&lt;p&gt;No sequence of limited length can do this in general&lt;/p&gt;</mattext>
+                </material>
+              </response_label>
+            </render_choice>
+          </response_lid>
+        </presentation>
+        <resprocessing>
+          <outcomes>
+            <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+          </outcomes>
+          <respcondition continue="No">
+            <conditionvar>
+              <and>
+                <not>
+                  <varequal respident="response1">text2qti_choice_ae9da7ce8db0e7c3f10d5fcc674f1f7d0ee235a7bede5cf52ae72b55fbfc9f8a</varequal>
+                </not>
+                <varequal respident="response1">text2qti_choice_efafcda302318876c84b584400ce55ba2145e5e3ed49229dc47283c3b7ba541d</varequal>
+                <not>
+                  <varequal respident="response1">text2qti_choice_f05168971c8f93323da68a48e610ed80294ebb5250aa8515e92783b8fa522cce</varequal>
+                </not>
+                <not>
+                  <varequal respident="response1">text2qti_choice_36b4db152cf3853ad2fea33d27979cfd9fd3ce928a30c25e7b141cd8e3ba6352</varequal>
+                </not>
+                <not>
+                  <varequal respident="response1">text2qti_choice_4382865e1771e1daab5311d39be4a3763e056be520fc71868f985302297b2a2b</varequal>
+                </not>
+              </and>
+            </conditionvar>
+            <setvar action="Set" varname="SCORE">100</setvar>
+          </respcondition>
+        </resprocessing>
+      </item>
+      <item ident="text2qti_question_350fdbaa54a2c320a5d17c94009a4aac4275671591ae38167601ad8acdaeabc8" title="Question">
+        <itemmetadata>
+          <qtimetadata>
+            <qtimetadatafield>
+              <fieldlabel>question_type</fieldlabel>
+              <fieldentry>multiple_answers_question</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>points_possible</fieldlabel>
+              <fieldentry>1</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>original_answer_ids</fieldlabel>
+              <fieldentry>text2qti_choice_a2cce36958479dc118e24c355864765b563d73ba1f594db94902553adc9ccffe,text2qti_choice_9f21e391e4796f858f3367b5bc6754b60e63e03689d21ae4dfa0ee3481709ee1,text2qti_choice_6c308713432f8c308eaa736e32ab1892dc1cb7f638e546e899f9c228047f6737,text2qti_choice_500cb8444e7f09552c19f8024ea7deec028f62d3e103c00a86321596ffd12b49</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>assessment_question_identifierref</fieldlabel>
+              <fieldentry>text2qti_question_ref_350fdbaa54a2c320a5d17c94009a4aac4275671591ae38167601ad8acdaeabc8</fieldentry>
+            </qtimetadatafield>
+          </qtimetadata>
+        </itemmetadata>
+        <presentation>
+          <material>
+            <mattext texttype="text/html">&lt;p&gt;Given the discrete time system: $$\begin{aligned}    \mathbf{x}[k+1] =&amp;amp; \overbrace{\left[
+        \begin{array}{ccc}
+         0.9 &amp;amp; 0.2  \
+         -0.5 &amp;amp; 0.9  \end{array}
+        \right]}^\mathbf{A} \mathbf{x}[k] +
+     \overbrace{\left[
+        \begin{array}{c}
+         1 \ 0
+        \end{array}
+        \right]}^\mathbf{B} u[k] +
+     \overbrace{\left[
+        \begin{array}{ccc}
+         1 &amp;amp; 0 \ 0 &amp;amp; 1 \end{array}
+        \right]}^\mathbf{G} \mathbf{w}[k] \
+        y[k] =&amp;amp; \overbrace{\left[
+        \begin{array}{ccc}
+         1 &amp;amp; 0
+        \end{array}
+        \right]}^\mathbf{C} \mathbf{x}[k] + v[k]\end{aligned}$$ with the
+    following disturbance and noise properties: $$\begin{aligned}
+        \mathbf{E}[\mathbf{w}[k]] =&amp;amp; 0, \quad \mathbf{E}[\mathbf{w}[k]\mathbf{w}[l]] = \delta[k,l]\mathbf{Q} \
+        \mathbf{E}[v[k]] =&amp;amp; 0, \quad \mathbf{E}[v[k]v[l]] = \delta[k,l]\sigma^2\end{aligned}$$&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;You are using a discrete time Kalman filter to estimate the states of
+the system. If the apriori covariance matrix at time &amp;lt;img class="equation_image" title="k" src="/k" alt="LaTeX: k" data-equation-content="k"&amp;gt; is
+&amp;lt;img class="equation_image" title="P^-[k] = \left[ \begin{array}{cc} 2 &amp;amp;amp; 1 \\ 1 &amp;amp;amp; 2 \end{array} \right]" src="/P%255E-%255Bk%255D%2520%253D%2520%255Cleft%255B%2520%255Cbegin%257Barray%257D%257Bcc%257D%25202%2520%2526%25201%2520%255C%255C%25201%2520%2526%25202%2520%255Cend%257Barray%257D%2520%255Cright%255D" alt="LaTeX: P^-[k] = \left[ \begin{array}{cc} 2 &amp;amp;amp; 1 \\ 1 &amp;amp;amp; 2 \end{array} \right]" data-equation-content="P^-[k] = \left[ \begin{array}{cc} 2 &amp;amp;amp; 1 \\ 1 &amp;amp;amp; 2 \end{array} \right]"&amp;gt;,
+what is the Kalman gain at time &amp;lt;img class="equation_image" title="k" src="/k" alt="LaTeX: k" data-equation-content="k"&amp;gt;?
+&lt;/code&gt;&lt;/pre&gt;</mattext>
+          </material>
+          <response_lid ident="response1" rcardinality="Multiple">
+            <render_choice>
+              <response_label ident="text2qti_choice_a2cce36958479dc118e24c355864765b563d73ba1f594db94902553adc9ccffe">
+                <material>
+                  <mattext texttype="text/html">&lt;p&gt;&lt;img class="equation_image" title="\mathbf{L}[k] = \left[ \begin{array}{c} 1 + 2\mathbf{Q}^{-1} \\ 0.5 + 2\mathbf{Q}^{-1}  \end{array} \right]" src="/%255Cmathbf%257BL%257D%255Bk%255D%2520%253D%2520%255Cleft%255B%2520%255Cbegin%257Barray%257D%257Bc%257D%25201%2520%252B%25202%255Cmathbf%257BQ%257D%255E%257B-1%257D%2520%255C%255C%25200.5%2520%252B%25202%255Cmathbf%257BQ%257D%255E%257B-1%257D%2520%2520%255Cend%257Barray%257D%2520%255Cright%255D" alt="LaTeX: \mathbf{L}[k] = \left[ \begin{array}{c} 1 + 2\mathbf{Q}^{-1} \\ 0.5 + 2\mathbf{Q}^{-1}  \end{array} \right]" data-equation-content="\mathbf{L}[k] = \left[ \begin{array}{c} 1 + 2\mathbf{Q}^{-1} \\ 0.5 + 2\mathbf{Q}^{-1}  \end{array} \right]"&gt;&lt;/p&gt;</mattext>
+                </material>
+              </response_label>
+              <response_label ident="text2qti_choice_9f21e391e4796f858f3367b5bc6754b60e63e03689d21ae4dfa0ee3481709ee1">
+                <material>
+                  <mattext texttype="text/html">&lt;p&gt;&lt;img class="equation_image" title="\mathbf{L}[k] = \left[ \begin{array}{c} 1 \\ 2 \end{array} \right]" src="/%255Cmathbf%257BL%257D%255Bk%255D%2520%253D%2520%255Cleft%255B%2520%255Cbegin%257Barray%257D%257Bc%257D%25201%2520%255C%255C%25202%2520%255Cend%257Barray%257D%2520%255Cright%255D" alt="LaTeX: \mathbf{L}[k] = \left[ \begin{array}{c} 1 \\ 2 \end{array} \right]" data-equation-content="\mathbf{L}[k] = \left[ \begin{array}{c} 1 \\ 2 \end{array} \right]"&gt;&lt;/p&gt;</mattext>
+                </material>
+              </response_label>
+              <response_label ident="text2qti_choice_6c308713432f8c308eaa736e32ab1892dc1cb7f638e546e899f9c228047f6737">
+                <material>
+                  <mattext texttype="text/html">&lt;p&gt;&lt;img class="equation_image" title="\mathbf{L}[k] = \left[ \begin{array}{c} 1/(2 + \sigma^2) \\ 2/(2 + \sigma^2) \end{array} \right]" src="/%255Cmathbf%257BL%257D%255Bk%255D%2520%253D%2520%255Cleft%255B%2520%255Cbegin%257Barray%257D%257Bc%257D%25201/%25282%2520%252B%2520%255Csigma%255E2%2529%2520%255C%255C%25202/%25282%2520%252B%2520%255Csigma%255E2%2529%2520%255Cend%257Barray%257D%2520%255Cright%255D" alt="LaTeX: \mathbf{L}[k] = \left[ \begin{array}{c} 1/(2 + \sigma^2) \\ 2/(2 + \sigma^2) \end{array} \right]" data-equation-content="\mathbf{L}[k] = \left[ \begin{array}{c} 1/(2 + \sigma^2) \\ 2/(2 + \sigma^2) \end{array} \right]"&gt;&lt;/p&gt;</mattext>
+                </material>
+              </response_label>
+              <response_label ident="text2qti_choice_500cb8444e7f09552c19f8024ea7deec028f62d3e103c00a86321596ffd12b49">
+                <material>
+                  <mattext texttype="text/html">&lt;p&gt;&lt;img class="equation_image" title="\mathbf{L}[k] = \left[ \begin{array}{c} 2/(2 + \sigma^2) \\ 1/(2 + \sigma^2) \end{array} \right]" src="/%255Cmathbf%257BL%257D%255Bk%255D%2520%253D%2520%255Cleft%255B%2520%255Cbegin%257Barray%257D%257Bc%257D%25202/%25282%2520%252B%2520%255Csigma%255E2%2529%2520%255C%255C%25201/%25282%2520%252B%2520%255Csigma%255E2%2529%2520%255Cend%257Barray%257D%2520%255Cright%255D" alt="LaTeX: \mathbf{L}[k] = \left[ \begin{array}{c} 2/(2 + \sigma^2) \\ 1/(2 + \sigma^2) \end{array} \right]" data-equation-content="\mathbf{L}[k] = \left[ \begin{array}{c} 2/(2 + \sigma^2) \\ 1/(2 + \sigma^2) \end{array} \right]"&gt;&lt;/p&gt;</mattext>
+                </material>
+              </response_label>
+            </render_choice>
+          </response_lid>
+        </presentation>
+        <resprocessing>
+          <outcomes>
+            <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+          </outcomes>
+          <respcondition continue="No">
+            <conditionvar>
+              <and>
+                <not>
+                  <varequal respident="response1">text2qti_choice_a2cce36958479dc118e24c355864765b563d73ba1f594db94902553adc9ccffe</varequal>
+                </not>
+                <not>
+                  <varequal respident="response1">text2qti_choice_9f21e391e4796f858f3367b5bc6754b60e63e03689d21ae4dfa0ee3481709ee1</varequal>
+                </not>
+                <not>
+                  <varequal respident="response1">text2qti_choice_6c308713432f8c308eaa736e32ab1892dc1cb7f638e546e899f9c228047f6737</varequal>
+                </not>
+                <varequal respident="response1">text2qti_choice_500cb8444e7f09552c19f8024ea7deec028f62d3e103c00a86321596ffd12b49</varequal>
+              </and>
+            </conditionvar>
+            <setvar action="Set" varname="SCORE">100</setvar>
+          </respcondition>
+        </resprocessing>
+      </item>
+      <item ident="text2qti_question_980034bc99ad0263ab166a2ec9de3d485ef6f9699ad4c6d8ba47575625ff05fb" title="Question">
+        <itemmetadata>
+          <qtimetadata>
+            <qtimetadatafield>
+              <fieldlabel>question_type</fieldlabel>
+              <fieldentry>multiple_answers_question</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>points_possible</fieldlabel>
+              <fieldentry>1</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>original_answer_ids</fieldlabel>
+              <fieldentry>text2qti_choice_c8039c82c52bec7eb8baa11fbcf5ee25de13ec1b5cbc0c95df14c65be48a91e3,text2qti_choice_52e0f3511a16654773269036fc588c0d16f6b97ddcfd9d73dff4c79c107e35df,text2qti_choice_b72a4f6ca11e9c668f69bbc9cd1c1b88fdd805a284f85ad1332e97fc247f0bd1,text2qti_choice_418ed6891beb2dfcda1796bc98150f2b129e481a11b64f6b375023f29e544eb7,text2qti_choice_24e14bea740ab03d18563c8667d57e3521caf1f0875626605e6bd4bb016b3332</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>assessment_question_identifierref</fieldlabel>
+              <fieldentry>text2qti_question_ref_980034bc99ad0263ab166a2ec9de3d485ef6f9699ad4c6d8ba47575625ff05fb</fieldentry>
+            </qtimetadatafield>
+          </qtimetadata>
+        </itemmetadata>
+        <presentation>
+          <material>
+            <mattext texttype="text/html">&lt;p&gt;Given the system matrix:$$\mathbf{A} = \left[ \begin{array}{ccc} 0 &amp;amp; 0 &amp;amp; 0 \ 0 &amp;amp; -0.1 &amp;amp; 0 \ -1 &amp;amp; 1 &amp;amp; 0  \end{array} \right]$$&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;Which statement is correct about the internal stability and the
+input-output stability of the system?
+&lt;/code&gt;&lt;/pre&gt;</mattext>
+          </material>
+          <response_lid ident="response1" rcardinality="Multiple">
+            <render_choice>
+              <response_label ident="text2qti_choice_c8039c82c52bec7eb8baa11fbcf5ee25de13ec1b5cbc0c95df14c65be48a91e3">
+                <material>
+                  <mattext texttype="text/html">&lt;p&gt;Unstable both internally and BIBO&lt;/p&gt;</mattext>
+                </material>
+              </response_label>
+              <response_label ident="text2qti_choice_52e0f3511a16654773269036fc588c0d16f6b97ddcfd9d73dff4c79c107e35df">
+                <material>
+                  <mattext texttype="text/html">&lt;p&gt;Internally unstable, but BIBO stable&lt;/p&gt;</mattext>
+                </material>
+              </response_label>
+              <response_label ident="text2qti_choice_b72a4f6ca11e9c668f69bbc9cd1c1b88fdd805a284f85ad1332e97fc247f0bd1">
+                <material>
+                  <mattext texttype="text/html">&lt;p&gt;Stable both internally and BIBO&lt;/p&gt;</mattext>
+                </material>
+              </response_label>
+              <response_label ident="text2qti_choice_418ed6891beb2dfcda1796bc98150f2b129e481a11b64f6b375023f29e544eb7">
+                <material>
+                  <mattext texttype="text/html">&lt;p&gt;Internally unstable, and we need more information to determine BIBO&lt;/p&gt;</mattext>
+                </material>
+              </response_label>
+              <response_label ident="text2qti_choice_24e14bea740ab03d18563c8667d57e3521caf1f0875626605e6bd4bb016b3332">
+                <material>
+                  <mattext texttype="text/html">&lt;p&gt;Internally stable, and we need more information to determine BIBO&lt;/p&gt;</mattext>
+                </material>
+              </response_label>
+            </render_choice>
+          </response_lid>
+        </presentation>
+        <resprocessing>
+          <outcomes>
+            <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+          </outcomes>
+          <respcondition continue="No">
+            <conditionvar>
+              <and>
+                <not>
+                  <varequal respident="response1">text2qti_choice_c8039c82c52bec7eb8baa11fbcf5ee25de13ec1b5cbc0c95df14c65be48a91e3</varequal>
+                </not>
+                <not>
+                  <varequal respident="response1">text2qti_choice_52e0f3511a16654773269036fc588c0d16f6b97ddcfd9d73dff4c79c107e35df</varequal>
+                </not>
+                <not>
+                  <varequal respident="response1">text2qti_choice_b72a4f6ca11e9c668f69bbc9cd1c1b88fdd805a284f85ad1332e97fc247f0bd1</varequal>
+                </not>
+                <varequal respident="response1">text2qti_choice_418ed6891beb2dfcda1796bc98150f2b129e481a11b64f6b375023f29e544eb7</varequal>
+                <not>
+                  <varequal respident="response1">text2qti_choice_24e14bea740ab03d18563c8667d57e3521caf1f0875626605e6bd4bb016b3332</varequal>
+                </not>
+              </and>
+            </conditionvar>
+            <setvar action="Set" varname="SCORE">100</setvar>
+          </respcondition>
+        </resprocessing>
+      </item>
+      <item ident="text2qti_question_921c69c02e9548c8fbfc74501df0d6debc24661bc7ddc622314e9477c150075e" title="Question">
+        <itemmetadata>
+          <qtimetadata>
+            <qtimetadatafield>
+              <fieldlabel>question_type</fieldlabel>
+              <fieldentry>multiple_answers_question</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>points_possible</fieldlabel>
+              <fieldentry>1</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>original_answer_ids</fieldlabel>
+              <fieldentry>text2qti_choice_307c259bc4a92a6754d346980d7ca1f391f23cedac1618343a6f0b8ace00f125,text2qti_choice_492b6ff09e3db8e5f726f721bbd0ba0b9902c743a6adfec566a94c552fe697cd,text2qti_choice_6d908c66843bc4b5c9381dcf920ee563d6657d9024dc33b5e4140c6a99aa6fc5,text2qti_choice_8fbf8effdd87ef584fb7b19eb99cc92c6c8c6514d0f54868d839dcc5ce7d3436</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>assessment_question_identifierref</fieldlabel>
+              <fieldentry>text2qti_question_ref_921c69c02e9548c8fbfc74501df0d6debc24661bc7ddc622314e9477c150075e</fieldentry>
+            </qtimetadatafield>
+          </qtimetadata>
+        </itemmetadata>
+        <presentation>
+          <material>
+            <mattext texttype="text/html">&lt;p&gt;Given the following continuous time system :$$\mathbf{\dot x} = \overbrace{\left[
+        \begin{array}{ccc}
+         2 &amp;amp; -1  \
+         0 &amp;amp; -1 \
+        \end{array}
+        \right]}^\mathbf{A} \mathbf{x} +
+     \overbrace{\left[
+        \begin{array}{cc}
+         1 \ 1
+        \end{array}
+        \right]}^\mathbf{B} u, \quad
+        y = \overbrace{\left[
+        \begin{array}{ccc}
+         0 &amp;amp; 1
+        \end{array}
+        \right]}^\mathbf{C} \mathbf{x}$$&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;Is this system:
+&lt;/code&gt;&lt;/pre&gt;</mattext>
+          </material>
+          <response_lid ident="response1" rcardinality="Multiple">
+            <render_choice>
+              <response_label ident="text2qti_choice_307c259bc4a92a6754d346980d7ca1f391f23cedac1618343a6f0b8ace00f125">
+                <material>
+                  <mattext texttype="text/html">&lt;p&gt;Unstable (internally and in the input-output sense)&lt;/p&gt;</mattext>
+                </material>
+              </response_label>
+              <response_label ident="text2qti_choice_492b6ff09e3db8e5f726f721bbd0ba0b9902c743a6adfec566a94c552fe697cd">
+                <material>
+                  <mattext texttype="text/html">&lt;p&gt;Exponentially stable&lt;/p&gt;</mattext>
+                </material>
+              </response_label>
+              <response_label ident="text2qti_choice_6d908c66843bc4b5c9381dcf920ee563d6657d9024dc33b5e4140c6a99aa6fc5">
+                <material>
+                  <mattext texttype="text/html">&lt;p&gt;Marginally stable&lt;/p&gt;</mattext>
+                </material>
+              </response_label>
+              <response_label ident="text2qti_choice_8fbf8effdd87ef584fb7b19eb99cc92c6c8c6514d0f54868d839dcc5ce7d3436">
+                <material>
+                  <mattext texttype="text/html">&lt;p&gt;BIBO stable&lt;/p&gt;</mattext>
+                </material>
+              </response_label>
+            </render_choice>
+          </response_lid>
+        </presentation>
+        <resprocessing>
+          <outcomes>
+            <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+          </outcomes>
+          <respcondition continue="No">
+            <conditionvar>
+              <and>
+                <not>
+                  <varequal respident="response1">text2qti_choice_307c259bc4a92a6754d346980d7ca1f391f23cedac1618343a6f0b8ace00f125</varequal>
+                </not>
+                <not>
+                  <varequal respident="response1">text2qti_choice_492b6ff09e3db8e5f726f721bbd0ba0b9902c743a6adfec566a94c552fe697cd</varequal>
+                </not>
+                <varequal respident="response1">text2qti_choice_6d908c66843bc4b5c9381dcf920ee563d6657d9024dc33b5e4140c6a99aa6fc5</varequal>
+                <not>
+                  <varequal respident="response1">text2qti_choice_8fbf8effdd87ef584fb7b19eb99cc92c6c8c6514d0f54868d839dcc5ce7d3436</varequal>
+                </not>
+              </and>
+            </conditionvar>
+            <setvar action="Set" varname="SCORE">100</setvar>
+          </respcondition>
+        </resprocessing>
+      </item>
+      <item ident="text2qti_question_336ba6b336e3d8685bce78dc49fd03fed97541614f2dd9508212e2eebb5f59d2" title="Question">
+        <itemmetadata>
+          <qtimetadata>
+            <qtimetadatafield>
+              <fieldlabel>question_type</fieldlabel>
+              <fieldentry>multiple_answers_question</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>points_possible</fieldlabel>
+              <fieldentry>1</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>original_answer_ids</fieldlabel>
+              <fieldentry>text2qti_choice_6f6201660a2efd951244c6423555af5a17551a047bca60581ace12db9996eddb,text2qti_choice_d6637001a9fe42e8344872c66a3d6984a9392c594b03ac220e2a7519bfdff364,text2qti_choice_0690819f1b9c347801020ec300c7140fb7d5af20aab549d250d3e08900476ebe,text2qti_choice_9b1d30e4828e268199cba5915002809d7f892361be6b36a67e759e5fac2001fa</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>assessment_question_identifierref</fieldlabel>
+              <fieldentry>text2qti_question_ref_336ba6b336e3d8685bce78dc49fd03fed97541614f2dd9508212e2eebb5f59d2</fieldentry>
+            </qtimetadatafield>
+          </qtimetadata>
+        </itemmetadata>
+        <presentation>
+          <material>
+            <mattext texttype="text/html">&lt;p&gt;You need to model a noise process that has the spectral density
+    function&lt;img class="equation_image" title="S(\omega) = \frac{\omega^2}{\omega^2 + \omega_0^2}" src="/S%2528%255Comega%2529%2520%253D%2520%255Cfrac%257B%255Comega%255E2%257D%257B%255Comega%255E2%2520%252B%2520%255Comega_0%255E2%257D" alt="LaTeX: S(\omega) = \frac{\omega^2}{\omega^2 + \omega_0^2}" data-equation-content="S(\omega) = \frac{\omega^2}{\omega^2 + \omega_0^2}"&gt;. Which of the
+    following state space models, given a unity white noise input, will
+    output a signal with the spectral density function matching &lt;img class="equation_image" title="S(\omega)" src="/S%2528%255Comega%2529" alt="LaTeX: S(\omega)" data-equation-content="S(\omega)"&gt;?&lt;/p&gt;</mattext>
+          </material>
+          <response_lid ident="response1" rcardinality="Multiple">
+            <render_choice>
+              <response_label ident="text2qti_choice_6f6201660a2efd951244c6423555af5a17551a047bca60581ace12db9996eddb">
+                <material>
+                  <mattext texttype="text/html">&lt;p&gt;&lt;img class="equation_image" title="\dot x = -\omega_0 x + u, \quad y = -\omega_0 x" src="/%255Cdot%2520x%2520%253D%2520-%255Comega_0%2520x%2520%252B%2520u%252C%2520%255Cquad%2520y%2520%253D%2520-%255Comega_0%2520x" alt="LaTeX: \dot x = -\omega_0 x + u, \quad y = -\omega_0 x" data-equation-content="\dot x = -\omega_0 x + u, \quad y = -\omega_0 x"&gt;&lt;/p&gt;</mattext>
+                </material>
+              </response_label>
+              <response_label ident="text2qti_choice_d6637001a9fe42e8344872c66a3d6984a9392c594b03ac220e2a7519bfdff364">
+                <material>
+                  <mattext texttype="text/html">&lt;p&gt;&lt;img class="equation_image" title="\dot x = -\omega_0 x + u, \quad y = -\omega_0 x - u" src="/%255Cdot%2520x%2520%253D%2520-%255Comega_0%2520x%2520%252B%2520u%252C%2520%255Cquad%2520y%2520%253D%2520-%255Comega_0%2520x%2520-%2520u" alt="LaTeX: \dot x = -\omega_0 x + u, \quad y = -\omega_0 x - u" data-equation-content="\dot x = -\omega_0 x + u, \quad y = -\omega_0 x - u"&gt;&lt;/p&gt;</mattext>
+                </material>
+              </response_label>
+              <response_label ident="text2qti_choice_0690819f1b9c347801020ec300c7140fb7d5af20aab549d250d3e08900476ebe">
+                <material>
+                  <mattext texttype="text/html">&lt;p&gt;&lt;img class="equation_image" title="\dot x = -\omega_0 x + u, \quad y = -\omega_0 x + u" src="/%255Cdot%2520x%2520%253D%2520-%255Comega_0%2520x%2520%252B%2520u%252C%2520%255Cquad%2520y%2520%253D%2520-%255Comega_0%2520x%2520%252B%2520u" alt="LaTeX: \dot x = -\omega_0 x + u, \quad y = -\omega_0 x + u" data-equation-content="\dot x = -\omega_0 x + u, \quad y = -\omega_0 x + u"&gt;&lt;/p&gt;</mattext>
+                </material>
+              </response_label>
+              <response_label ident="text2qti_choice_9b1d30e4828e268199cba5915002809d7f892361be6b36a67e759e5fac2001fa">
+                <material>
+                  <mattext texttype="text/html">&lt;p&gt;&lt;img class="equation_image" title="\dot x = -\omega_0 x , \quad y = -\omega_0 x + u" src="/%255Cdot%2520x%2520%253D%2520-%255Comega_0%2520x%2520%252C%2520%255Cquad%2520y%2520%253D%2520-%255Comega_0%2520x%2520%252B%2520u" alt="LaTeX: \dot x = -\omega_0 x , \quad y = -\omega_0 x + u" data-equation-content="\dot x = -\omega_0 x , \quad y = -\omega_0 x + u"&gt;&lt;/p&gt;</mattext>
+                </material>
+              </response_label>
+            </render_choice>
+          </response_lid>
+        </presentation>
+        <resprocessing>
+          <outcomes>
+            <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+          </outcomes>
+          <respcondition continue="No">
+            <conditionvar>
+              <and>
+                <not>
+                  <varequal respident="response1">text2qti_choice_6f6201660a2efd951244c6423555af5a17551a047bca60581ace12db9996eddb</varequal>
+                </not>
+                <not>
+                  <varequal respident="response1">text2qti_choice_d6637001a9fe42e8344872c66a3d6984a9392c594b03ac220e2a7519bfdff364</varequal>
+                </not>
+                <varequal respident="response1">text2qti_choice_0690819f1b9c347801020ec300c7140fb7d5af20aab549d250d3e08900476ebe</varequal>
+                <not>
+                  <varequal respident="response1">text2qti_choice_9b1d30e4828e268199cba5915002809d7f892361be6b36a67e759e5fac2001fa</varequal>
+                </not>
+              </and>
+            </conditionvar>
+            <setvar action="Set" varname="SCORE">100</setvar>
+          </respcondition>
+        </resprocessing>
+      </item>
+      <item ident="text2qti_question_2e4009034d70d23f31c9cbf5be717e85a52f079c5ae9930a6bddedd74cad654d" title="Question">
+        <itemmetadata>
+          <qtimetadata>
+            <qtimetadatafield>
+              <fieldlabel>question_type</fieldlabel>
+              <fieldentry>multiple_answers_question</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>points_possible</fieldlabel>
+              <fieldentry>1</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>original_answer_ids</fieldlabel>
+              <fieldentry>text2qti_choice_76b36ab1a87d089773d5c19961e3b5b4b93978ddf8b1d04a5536f24081dd4d62,text2qti_choice_439ccd32815c39e98a235ea52ab942a499dae07a4b628f54339eec0f3693e660,text2qti_choice_2dbc417aca71ecec58a53da58e61253a2e81f49d3b828220a176082057a405a2,text2qti_choice_1ac26663763a06c6c53ffb8bc1d24e0e649facee753e22ec71df39dca6848250,text2qti_choice_351fcc7cfe8e9b84c459dc165b5ec822b6243a709373874042a088fd426593f7</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>assessment_question_identifierref</fieldlabel>
+              <fieldentry>text2qti_question_ref_2e4009034d70d23f31c9cbf5be717e85a52f079c5ae9930a6bddedd74cad654d</fieldentry>
+            </qtimetadatafield>
+          </qtimetadata>
+        </itemmetadata>
+        <presentation>
+          <material>
+            <mattext texttype="text/html">&lt;p&gt;$$\dot x(t) = a x(t) + u(t), \quad a&amp;gt;0%   \mathbf{\dot x} = \overbrace{\left[
+%   \begin{array}{ccc}
+%    -1 &amp;amp; 1  \
+%    0 &amp;amp; 0.5
+%   \end{array}
+%   \right]}^\mathbf{A} \mathbf{x} +
+% \overbrace{\left[
+%   \begin{array}{cc}
+%    0 \ 1
+%   \end{array}
+%   \right]}^\mathbf{B} u$$ This system is to be controlled using a
+state feedback &lt;img class="equation_image" title="u=-kx" src="/u%253D-kx" alt="LaTeX: u=-kx" data-equation-content="u=-kx"&gt;. The feedback gain coefficient is to be chosen to
+minimize this objective function:
+$$J = \int_0^\infty q x(t)^2 + ru(t)^2 dt$$&lt;/p&gt;
+&lt;p&gt;What (if any) eigenvalue does the closed-loop system approach when &lt;img class="equation_image" title="q" src="/q" alt="LaTeX: q" data-equation-content="q"&gt;
+stays constant and the input cost increases toward infinity, i.e.
+&lt;img class="equation_image" title="r \rightarrow \infty" src="/r%2520%255Crightarrow%2520%255Cinfty" alt="LaTeX: r \rightarrow \infty" data-equation-content="r \rightarrow \infty"&gt;?&lt;/p&gt;</mattext>
+          </material>
+          <response_lid ident="response1" rcardinality="Multiple">
+            <render_choice>
+              <response_label ident="text2qti_choice_76b36ab1a87d089773d5c19961e3b5b4b93978ddf8b1d04a5536f24081dd4d62">
+                <material>
+                  <mattext texttype="text/html">&lt;p&gt;Unstable (internally and in the input-output sense)&lt;/p&gt;</mattext>
+                </material>
+              </response_label>
+              <response_label ident="text2qti_choice_439ccd32815c39e98a235ea52ab942a499dae07a4b628f54339eec0f3693e660">
+                <material>
+                  <mattext texttype="text/html">&lt;p&gt;Exponentially stable&lt;/p&gt;</mattext>
+                </material>
+              </response_label>
+              <response_label ident="text2qti_choice_2dbc417aca71ecec58a53da58e61253a2e81f49d3b828220a176082057a405a2">
+                <material>
+                  <mattext texttype="text/html">&lt;p&gt;Marginally stable&lt;/p&gt;</mattext>
+                </material>
+              </response_label>
+              <response_label ident="text2qti_choice_1ac26663763a06c6c53ffb8bc1d24e0e649facee753e22ec71df39dca6848250">
+                <material>
+                  <mattext texttype="text/html">&lt;p&gt;BIBO stable, but not internally stable&lt;/p&gt;</mattext>
+                </material>
+              </response_label>
+              <response_label ident="text2qti_choice_351fcc7cfe8e9b84c459dc165b5ec822b6243a709373874042a088fd426593f7">
+                <material>
+                  <mattext texttype="text/html">&lt;p&gt;Stability properties depend on &lt;img class="equation_image" title="a" src="/a" alt="LaTeX: a" data-equation-content="a"&gt;&lt;/p&gt;</mattext>
+                </material>
+              </response_label>
+            </render_choice>
+          </response_lid>
+        </presentation>
+        <resprocessing>
+          <outcomes>
+            <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+          </outcomes>
+          <respcondition continue="No">
+            <conditionvar>
+              <and>
+                <not>
+                  <varequal respident="response1">text2qti_choice_76b36ab1a87d089773d5c19961e3b5b4b93978ddf8b1d04a5536f24081dd4d62</varequal>
+                </not>
+                <not>
+                  <varequal respident="response1">text2qti_choice_439ccd32815c39e98a235ea52ab942a499dae07a4b628f54339eec0f3693e660</varequal>
+                </not>
+                <varequal respident="response1">text2qti_choice_2dbc417aca71ecec58a53da58e61253a2e81f49d3b828220a176082057a405a2</varequal>
+                <not>
+                  <varequal respident="response1">text2qti_choice_1ac26663763a06c6c53ffb8bc1d24e0e649facee753e22ec71df39dca6848250</varequal>
+                </not>
+                <not>
+                  <varequal respident="response1">text2qti_choice_351fcc7cfe8e9b84c459dc165b5ec822b6243a709373874042a088fd426593f7</varequal>
+                </not>
+              </and>
+            </conditionvar>
+            <setvar action="Set" varname="SCORE">100</setvar>
+          </respcondition>
+        </resprocessing>
+      </item>
+      <item ident="text2qti_question_9bbc06f55641c4d8c97512021cd6466e53375e694de0c8c14c8999a600ccc8ce" title="Question">
+        <itemmetadata>
+          <qtimetadata>
+            <qtimetadatafield>
+              <fieldlabel>question_type</fieldlabel>
+              <fieldentry>multiple_answers_question</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>points_possible</fieldlabel>
+              <fieldentry>1</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>original_answer_ids</fieldlabel>
+              <fieldentry>text2qti_choice_7f682aff931eef171eb093ca2bb176157153fccca0de5d170a69c8ba956e449c,text2qti_choice_c728d01ca5e861a645ba07a540138cac25d14c220d048e5c7fb8f493488429eb,text2qti_choice_76f6170fa3d42306cbdcb89a1f4130ec322d37466e1e40ed13a20162dbf031de,text2qti_choice_15da636c0af24b0edecd35c25a5fdcedaa7142f5f2979e61c6c45a96295b8d2e,text2qti_choice_f0dff83c2cabcc397e1b276ca2f902b69069ee399bb410328dea951c2f117477</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>assessment_question_identifierref</fieldlabel>
+              <fieldentry>text2qti_question_ref_9bbc06f55641c4d8c97512021cd6466e53375e694de0c8c14c8999a600ccc8ce</fieldentry>
+            </qtimetadatafield>
+          </qtimetadata>
+        </itemmetadata>
+        <presentation>
+          <material>
+            <mattext texttype="text/html">&lt;p&gt;Given the following continuous time system : $$\begin{aligned}    \mathbf{\dot x} =&amp;amp; \overbrace{\left[
+    \begin{array}{ccc}
+     -1 &amp;amp; \alpha  \
+     0 &amp;amp; -0.5
+    \end{array}
+    \right]}^\mathbf{A} \mathbf{x} +
+ \overbrace{\left[
+    \begin{array}{cc}
+     0 \ 1
+    \end{array}
+    \right]}^\mathbf{B} u \
+    y =&amp;amp; \overbrace{\left[
+    \begin{array}{cc}
+     1 &amp;amp; 0
+    \end{array}
+    \right]}^\mathbf{C} \mathbf{x}\end{aligned}$$&lt;/p&gt;
+&lt;p&gt;where &lt;img class="equation_image" title="\alpha \neq 0" src="/%255Calpha%2520%255Cneq%25200" alt="LaTeX: \alpha \neq 0" data-equation-content="\alpha \neq 0"&gt;. You want to estimate the state values using an
+observer:
+$$\mathbf{\hat {\dot x}} = \mathbf{A \hat x} + \mathbf{B}u + \mathbf{L}(y - \mathbf{C \hat x})$$&lt;/p&gt;
+&lt;p&gt;What gain matrix &lt;img class="equation_image" title="\mathbf{L}" src="/%255Cmathbf%257BL%257D" alt="LaTeX: \mathbf{L}" data-equation-content="\mathbf{L}"&gt; should you use for the estimation error
+dynamics to have both eigenvalues equal to -5?&lt;/p&gt;</mattext>
+          </material>
+          <response_lid ident="response1" rcardinality="Multiple">
+            <render_choice>
+              <response_label ident="text2qti_choice_7f682aff931eef171eb093ca2bb176157153fccca0de5d170a69c8ba956e449c">
+                <material>
+                  <mattext texttype="text/html">&lt;p&gt;No choice of &lt;img class="equation_image" title="\mathbf{L}" src="/%255Cmathbf%257BL%257D" alt="LaTeX: \mathbf{L}" data-equation-content="\mathbf{L}"&gt; will achieve this.&lt;/p&gt;</mattext>
+                </material>
+              </response_label>
+              <response_label ident="text2qti_choice_c728d01ca5e861a645ba07a540138cac25d14c220d048e5c7fb8f493488429eb">
+                <material>
+                  <mattext texttype="text/html">&lt;p&gt;&lt;img class="equation_image" title="\mathbf{L} = \left[ \begin{array}{c}8.5 \\ -4.75/\alpha \end{array} \right]" src="/%255Cmathbf%257BL%257D%2520%253D%2520%255Cleft%255B%2520%255Cbegin%257Barray%257D%257Bc%257D8.5%2520%255C%255C%2520-4.75/%255Calpha%2520%255Cend%257Barray%257D%2520%255Cright%255D" alt="LaTeX: \mathbf{L} = \left[ \begin{array}{c}8.5 \\ -4.75/\alpha \end{array} \right]" data-equation-content="\mathbf{L} = \left[ \begin{array}{c}8.5 \\ -4.75/\alpha \end{array} \right]"&gt;&lt;/p&gt;</mattext>
+                </material>
+              </response_label>
+              <response_label ident="text2qti_choice_76f6170fa3d42306cbdcb89a1f4130ec322d37466e1e40ed13a20162dbf031de">
+                <material>
+                  <mattext texttype="text/html">&lt;p&gt;&lt;img class="equation_image" title="\mathbf{L} = \left[ \begin{array}{c}8.5 \\ 20.25 \alpha \end{array} \right]" src="/%255Cmathbf%257BL%257D%2520%253D%2520%255Cleft%255B%2520%255Cbegin%257Barray%257D%257Bc%257D8.5%2520%255C%255C%252020.25%2520%255Calpha%2520%255Cend%257Barray%257D%2520%255Cright%255D" alt="LaTeX: \mathbf{L} = \left[ \begin{array}{c}8.5 \\ 20.25 \alpha \end{array} \right]" data-equation-content="\mathbf{L} = \left[ \begin{array}{c}8.5 \\ 20.25 \alpha \end{array} \right]"&gt;&lt;/p&gt;</mattext>
+                </material>
+              </response_label>
+              <response_label ident="text2qti_choice_15da636c0af24b0edecd35c25a5fdcedaa7142f5f2979e61c6c45a96295b8d2e">
+                <material>
+                  <mattext texttype="text/html">&lt;p&gt;&lt;img class="equation_image" title="\mathbf{L} = \left[ \begin{array}{c}10.5 \\ 20.25 / \alpha \end{array} \right]" src="/%255Cmathbf%257BL%257D%2520%253D%2520%255Cleft%255B%2520%255Cbegin%257Barray%257D%257Bc%257D10.5%2520%255C%255C%252020.25%2520/%2520%255Calpha%2520%255Cend%257Barray%257D%2520%255Cright%255D" alt="LaTeX: \mathbf{L} = \left[ \begin{array}{c}10.5 \\ 20.25 / \alpha \end{array} \right]" data-equation-content="\mathbf{L} = \left[ \begin{array}{c}10.5 \\ 20.25 / \alpha \end{array} \right]"&gt;&lt;/p&gt;</mattext>
+                </material>
+              </response_label>
+              <response_label ident="text2qti_choice_f0dff83c2cabcc397e1b276ca2f902b69069ee399bb410328dea951c2f117477">
+                <material>
+                  <mattext texttype="text/html">&lt;p&gt;&lt;img class="equation_image" title="\mathbf{L} = \left[ \begin{array}{c}8.5 \\ 20.25/\alpha \end{array} \right]" src="/%255Cmathbf%257BL%257D%2520%253D%2520%255Cleft%255B%2520%255Cbegin%257Barray%257D%257Bc%257D8.5%2520%255C%255C%252020.25/%255Calpha%2520%255Cend%257Barray%257D%2520%255Cright%255D" alt="LaTeX: \mathbf{L} = \left[ \begin{array}{c}8.5 \\ 20.25/\alpha \end{array} \right]" data-equation-content="\mathbf{L} = \left[ \begin{array}{c}8.5 \\ 20.25/\alpha \end{array} \right]"&gt;&lt;/p&gt;</mattext>
+                </material>
+              </response_label>
+            </render_choice>
+          </response_lid>
+        </presentation>
+        <resprocessing>
+          <outcomes>
+            <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+          </outcomes>
+          <respcondition continue="No">
+            <conditionvar>
+              <and>
+                <not>
+                  <varequal respident="response1">text2qti_choice_7f682aff931eef171eb093ca2bb176157153fccca0de5d170a69c8ba956e449c</varequal>
+                </not>
+                <not>
+                  <varequal respident="response1">text2qti_choice_c728d01ca5e861a645ba07a540138cac25d14c220d048e5c7fb8f493488429eb</varequal>
+                </not>
+                <not>
+                  <varequal respident="response1">text2qti_choice_76f6170fa3d42306cbdcb89a1f4130ec322d37466e1e40ed13a20162dbf031de</varequal>
+                </not>
+                <not>
+                  <varequal respident="response1">text2qti_choice_15da636c0af24b0edecd35c25a5fdcedaa7142f5f2979e61c6c45a96295b8d2e</varequal>
+                </not>
+                <varequal respident="response1">text2qti_choice_f0dff83c2cabcc397e1b276ca2f902b69069ee399bb410328dea951c2f117477</varequal>
+              </and>
+            </conditionvar>
+            <setvar action="Set" varname="SCORE">100</setvar>
+          </respcondition>
+        </resprocessing>
+      </item>
+      <item ident="text2qti_question_8aee6b19f25a8a7ce50df1267ceb47a59e39ad7aa07ce016ee061c59d6ef4333" title="Question">
+        <itemmetadata>
+          <qtimetadata>
+            <qtimetadatafield>
+              <fieldlabel>question_type</fieldlabel>
+              <fieldentry>multiple_answers_question</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>points_possible</fieldlabel>
+              <fieldentry>1</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>original_answer_ids</fieldlabel>
+              <fieldentry>text2qti_choice_18a0970d7defd27139459e5c6c374ce134130b73de7ff96c46095f62cf740efd,text2qti_choice_94a8dc7f2b7627b79ed1c53f95709a56856b5888fd8e960d72e5c19e9147fb9b,text2qti_choice_8f104b3927945b363606243814027634ebb3e60985ff7c54590ca4cc83e06725,text2qti_choice_ff92f49032d1114b6e3ae3ddf0f80f03ef8c6b5ddf2e4112c9524c7929b82235,text2qti_choice_b2f1f3e3ebdabe52d83cbabcb619c3d28d4f1f83f69e71bf839fe94ac00d34ac</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>assessment_question_identifierref</fieldlabel>
+              <fieldentry>text2qti_question_ref_8aee6b19f25a8a7ce50df1267ceb47a59e39ad7aa07ce016ee061c59d6ef4333</fieldentry>
+            </qtimetadatafield>
+          </qtimetadata>
+        </itemmetadata>
+        <presentation>
+          <material>
+            <mattext texttype="text/html">&lt;p&gt;Given the following continuous time system : $$\begin{aligned}    \mathbf{\dot x} =&amp;amp; \overbrace{\left[
+    \begin{array}{ccc}
+     -1 &amp;amp; \alpha  \
+     0 &amp;amp; \beta
+    \end{array}
+    \right]}^\mathbf{A} \mathbf{x} +
+ \overbrace{\left[
+    \begin{array}{cc}
+     0 \ 1
+    \end{array}
+    \right]}^\mathbf{B} u \
+    y =&amp;amp; \overbrace{\left[
+    \begin{array}{cc}
+     1 &amp;amp; 1
+    \end{array}
+    \right]}^\mathbf{C} \mathbf{x}\end{aligned}$$&lt;/p&gt;
+&lt;p&gt;What are the equations for this system on controllable canonical form?&lt;/p&gt;</mattext>
+          </material>
+          <response_lid ident="response1" rcardinality="Multiple">
+            <render_choice>
+              <response_label ident="text2qti_choice_18a0970d7defd27139459e5c6c374ce134130b73de7ff96c46095f62cf740efd">
+                <material>
+                  <mattext texttype="text/html">&lt;p&gt;&lt;img class="equation_image" title="\mathbf{\dot x} =  \left[ \begin{array}{cc} 2-\beta &amp;amp; -1 \\ 1 &amp;amp; 0 \end{array} \right] \mathbf{x} + \left[ \begin{array}{c} 1 \\ 0 \end{array} \right] u, \quad y = \left[ \begin{array}{cc}  1 &amp;amp; \alpha \end{array} \right] \mathbf{x}" src="/%255Cmathbf%257B%255Cdot%2520x%257D%2520%253D%2520%2520%255Cleft%255B%2520%255Cbegin%257Barray%257D%257Bcc%257D%25202-%255Cbeta%2520%2526%2520-1%2520%255C%255C%25201%2520%2526%25200%2520%255Cend%257Barray%257D%2520%255Cright%255D%2520%255Cmathbf%257Bx%257D%2520%252B%2520%255Cleft%255B%2520%255Cbegin%257Barray%257D%257Bc%257D%25201%2520%255C%255C%25200%2520%255Cend%257Barray%257D%2520%255Cright%255D%2520u%252C%2520%255Cquad%2520y%2520%253D%2520%255Cleft%255B%2520%255Cbegin%257Barray%257D%257Bcc%257D%2520%25201%2520%2526%2520%255Calpha%2520%255Cend%257Barray%257D%2520%255Cright%255D%2520%255Cmathbf%257Bx%257D" alt="LaTeX: \mathbf{\dot x} =  \left[ \begin{array}{cc} 2-\beta &amp;amp; -1 \\ 1 &amp;amp; 0 \end{array} \right] \mathbf{x} + \left[ \begin{array}{c} 1 \\ 0 \end{array} \right] u, \quad y = \left[ \begin{array}{cc}  1 &amp;amp; \alpha \end{array} \right] \mathbf{x}" data-equation-content="\mathbf{\dot x} =  \left[ \begin{array}{cc} 2-\beta &amp;amp; -1 \\ 1 &amp;amp; 0 \end{array} \right] \mathbf{x} + \left[ \begin{array}{c} 1 \\ 0 \end{array} \right] u, \quad y = \left[ \begin{array}{cc}  1 &amp;amp; \alpha \end{array} \right] \mathbf{x}"&gt;&lt;/p&gt;</mattext>
+                </material>
+              </response_label>
+              <response_label ident="text2qti_choice_94a8dc7f2b7627b79ed1c53f95709a56856b5888fd8e960d72e5c19e9147fb9b">
+                <material>
+                  <mattext texttype="text/html">&lt;p&gt;&lt;img class="equation_image" title="\mathbf{\dot x} =  \left[ \begin{array}{cc} 1-\beta &amp;amp; -\beta \\ 1 &amp;amp; 0 \end{array} \right] \mathbf{x} + \left[ \begin{array}{c} 1 \\ 0 \end{array} \right] u, \quad y = \left[ \begin{array}{cc}  1 &amp;amp; \alpha\end{array} \right] \mathbf{x}" src="/%255Cmathbf%257B%255Cdot%2520x%257D%2520%253D%2520%2520%255Cleft%255B%2520%255Cbegin%257Barray%257D%257Bcc%257D%25201-%255Cbeta%2520%2526%2520-%255Cbeta%2520%255C%255C%25201%2520%2526%25200%2520%255Cend%257Barray%257D%2520%255Cright%255D%2520%255Cmathbf%257Bx%257D%2520%252B%2520%255Cleft%255B%2520%255Cbegin%257Barray%257D%257Bc%257D%25201%2520%255C%255C%25200%2520%255Cend%257Barray%257D%2520%255Cright%255D%2520u%252C%2520%255Cquad%2520y%2520%253D%2520%255Cleft%255B%2520%255Cbegin%257Barray%257D%257Bcc%257D%2520%25201%2520%2526%2520%255Calpha%255Cend%257Barray%257D%2520%255Cright%255D%2520%255Cmathbf%257Bx%257D" alt="LaTeX: \mathbf{\dot x} =  \left[ \begin{array}{cc} 1-\beta &amp;amp; -\beta \\ 1 &amp;amp; 0 \end{array} \right] \mathbf{x} + \left[ \begin{array}{c} 1 \\ 0 \end{array} \right] u, \quad y = \left[ \begin{array}{cc}  1 &amp;amp; \alpha\end{array} \right] \mathbf{x}" data-equation-content="\mathbf{\dot x} =  \left[ \begin{array}{cc} 1-\beta &amp;amp; -\beta \\ 1 &amp;amp; 0 \end{array} \right] \mathbf{x} + \left[ \begin{array}{c} 1 \\ 0 \end{array} \right] u, \quad y = \left[ \begin{array}{cc}  1 &amp;amp; \alpha\end{array} \right] \mathbf{x}"&gt;&lt;/p&gt;</mattext>
+                </material>
+              </response_label>
+              <response_label ident="text2qti_choice_8f104b3927945b363606243814027634ebb3e60985ff7c54590ca4cc83e06725">
+                <material>
+                  <mattext texttype="text/html">&lt;p&gt;&lt;img class="equation_image" title="\mathbf{\dot x} =  \left[ \begin{array}{cc} \beta-1 &amp;amp; \beta \\ 1 &amp;amp; 0 \end{array} \right] \mathbf{x} + \left[ \begin{array}{c} 1 \\ 0 \end{array} \right] u, \quad y = \left[ \begin{array}{cc}  1 &amp;amp; 1+\alpha\end{array} \right] \mathbf{x}" src="/%255Cmathbf%257B%255Cdot%2520x%257D%2520%253D%2520%2520%255Cleft%255B%2520%255Cbegin%257Barray%257D%257Bcc%257D%2520%255Cbeta-1%2520%2526%2520%255Cbeta%2520%255C%255C%25201%2520%2526%25200%2520%255Cend%257Barray%257D%2520%255Cright%255D%2520%255Cmathbf%257Bx%257D%2520%252B%2520%255Cleft%255B%2520%255Cbegin%257Barray%257D%257Bc%257D%25201%2520%255C%255C%25200%2520%255Cend%257Barray%257D%2520%255Cright%255D%2520u%252C%2520%255Cquad%2520y%2520%253D%2520%255Cleft%255B%2520%255Cbegin%257Barray%257D%257Bcc%257D%2520%25201%2520%2526%25201%252B%255Calpha%255Cend%257Barray%257D%2520%255Cright%255D%2520%255Cmathbf%257Bx%257D" alt="LaTeX: \mathbf{\dot x} =  \left[ \begin{array}{cc} \beta-1 &amp;amp; \beta \\ 1 &amp;amp; 0 \end{array} \right] \mathbf{x} + \left[ \begin{array}{c} 1 \\ 0 \end{array} \right] u, \quad y = \left[ \begin{array}{cc}  1 &amp;amp; 1+\alpha\end{array} \right] \mathbf{x}" data-equation-content="\mathbf{\dot x} =  \left[ \begin{array}{cc} \beta-1 &amp;amp; \beta \\ 1 &amp;amp; 0 \end{array} \right] \mathbf{x} + \left[ \begin{array}{c} 1 \\ 0 \end{array} \right] u, \quad y = \left[ \begin{array}{cc}  1 &amp;amp; 1+\alpha\end{array} \right] \mathbf{x}"&gt;&lt;/p&gt;</mattext>
+                </material>
+              </response_label>
+              <response_label ident="text2qti_choice_ff92f49032d1114b6e3ae3ddf0f80f03ef8c6b5ddf2e4112c9524c7929b82235">
+                <material>
+                  <mattext texttype="text/html">&lt;p&gt;&lt;img class="equation_image" title="\mathbf{\dot x} =  \left[ \begin{array}{cc} \beta-1 &amp;amp; -2\alpha \\ 1 &amp;amp; 0 \end{array} \right] \mathbf{x} + \left[ \begin{array}{c} 1 \\ 0 \end{array} \right] u, \quad y = \left[ \begin{array}{cc}  1 &amp;amp; 1+\alpha \end{array} \right] \mathbf{x}" src="/%255Cmathbf%257B%255Cdot%2520x%257D%2520%253D%2520%2520%255Cleft%255B%2520%255Cbegin%257Barray%257D%257Bcc%257D%2520%255Cbeta-1%2520%2526%2520-2%255Calpha%2520%255C%255C%25201%2520%2526%25200%2520%255Cend%257Barray%257D%2520%255Cright%255D%2520%255Cmathbf%257Bx%257D%2520%252B%2520%255Cleft%255B%2520%255Cbegin%257Barray%257D%257Bc%257D%25201%2520%255C%255C%25200%2520%255Cend%257Barray%257D%2520%255Cright%255D%2520u%252C%2520%255Cquad%2520y%2520%253D%2520%255Cleft%255B%2520%255Cbegin%257Barray%257D%257Bcc%257D%2520%25201%2520%2526%25201%252B%255Calpha%2520%255Cend%257Barray%257D%2520%255Cright%255D%2520%255Cmathbf%257Bx%257D" alt="LaTeX: \mathbf{\dot x} =  \left[ \begin{array}{cc} \beta-1 &amp;amp; -2\alpha \\ 1 &amp;amp; 0 \end{array} \right] \mathbf{x} + \left[ \begin{array}{c} 1 \\ 0 \end{array} \right] u, \quad y = \left[ \begin{array}{cc}  1 &amp;amp; 1+\alpha \end{array} \right] \mathbf{x}" data-equation-content="\mathbf{\dot x} =  \left[ \begin{array}{cc} \beta-1 &amp;amp; -2\alpha \\ 1 &amp;amp; 0 \end{array} \right] \mathbf{x} + \left[ \begin{array}{c} 1 \\ 0 \end{array} \right] u, \quad y = \left[ \begin{array}{cc}  1 &amp;amp; 1+\alpha \end{array} \right] \mathbf{x}"&gt;&lt;/p&gt;</mattext>
+                </material>
+              </response_label>
+              <response_label ident="text2qti_choice_b2f1f3e3ebdabe52d83cbabcb619c3d28d4f1f83f69e71bf839fe94ac00d34ac">
+                <material>
+                  <mattext texttype="text/html">&lt;p&gt;&lt;img class="equation_image" title="\mathbf{\dot x} =  \left[ \begin{array}{cc} \beta &amp;amp; -1 \\ 1 &amp;amp; 0 \end{array} \right] \mathbf{x} + \left[ \begin{array}{c} 1 \\ 0 \end{array} \right] u, \quad y = \left[ \begin{array}{cc}  1+\alpha &amp;amp; 1 \end{array} \right] \mathbf{x}" src="/%255Cmathbf%257B%255Cdot%2520x%257D%2520%253D%2520%2520%255Cleft%255B%2520%255Cbegin%257Barray%257D%257Bcc%257D%2520%255Cbeta%2520%2526%2520-1%2520%255C%255C%25201%2520%2526%25200%2520%255Cend%257Barray%257D%2520%255Cright%255D%2520%255Cmathbf%257Bx%257D%2520%252B%2520%255Cleft%255B%2520%255Cbegin%257Barray%257D%257Bc%257D%25201%2520%255C%255C%25200%2520%255Cend%257Barray%257D%2520%255Cright%255D%2520u%252C%2520%255Cquad%2520y%2520%253D%2520%255Cleft%255B%2520%255Cbegin%257Barray%257D%257Bcc%257D%2520%25201%252B%255Calpha%2520%2526%25201%2520%255Cend%257Barray%257D%2520%255Cright%255D%2520%255Cmathbf%257Bx%257D" alt="LaTeX: \mathbf{\dot x} =  \left[ \begin{array}{cc} \beta &amp;amp; -1 \\ 1 &amp;amp; 0 \end{array} \right] \mathbf{x} + \left[ \begin{array}{c} 1 \\ 0 \end{array} \right] u, \quad y = \left[ \begin{array}{cc}  1+\alpha &amp;amp; 1 \end{array} \right] \mathbf{x}" data-equation-content="\mathbf{\dot x} =  \left[ \begin{array}{cc} \beta &amp;amp; -1 \\ 1 &amp;amp; 0 \end{array} \right] \mathbf{x} + \left[ \begin{array}{c} 1 \\ 0 \end{array} \right] u, \quad y = \left[ \begin{array}{cc}  1+\alpha &amp;amp; 1 \end{array} \right] \mathbf{x}"&gt;&lt;/p&gt;</mattext>
+                </material>
+              </response_label>
+            </render_choice>
+          </response_lid>
+        </presentation>
+        <resprocessing>
+          <outcomes>
+            <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+          </outcomes>
+          <respcondition continue="No">
+            <conditionvar>
+              <and>
+                <not>
+                  <varequal respident="response1">text2qti_choice_18a0970d7defd27139459e5c6c374ce134130b73de7ff96c46095f62cf740efd</varequal>
+                </not>
+                <not>
+                  <varequal respident="response1">text2qti_choice_94a8dc7f2b7627b79ed1c53f95709a56856b5888fd8e960d72e5c19e9147fb9b</varequal>
+                </not>
+                <varequal respident="response1">text2qti_choice_8f104b3927945b363606243814027634ebb3e60985ff7c54590ca4cc83e06725</varequal>
+                <not>
+                  <varequal respident="response1">text2qti_choice_ff92f49032d1114b6e3ae3ddf0f80f03ef8c6b5ddf2e4112c9524c7929b82235</varequal>
+                </not>
+                <not>
+                  <varequal respident="response1">text2qti_choice_b2f1f3e3ebdabe52d83cbabcb619c3d28d4f1f83f69e71bf839fe94ac00d34ac</varequal>
+                </not>
+              </and>
+            </conditionvar>
+            <setvar action="Set" varname="SCORE">100</setvar>
+          </respcondition>
+        </resprocessing>
+      </item>
+      <item ident="text2qti_question_7746e15be10af556bf8301764a001c09f84cce849518eb59de9b1e194a888f82" title="Question">
+        <itemmetadata>
+          <qtimetadata>
+            <qtimetadatafield>
+              <fieldlabel>question_type</fieldlabel>
+              <fieldentry>multiple_answers_question</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>points_possible</fieldlabel>
+              <fieldentry>1</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>original_answer_ids</fieldlabel>
+              <fieldentry>text2qti_choice_56d376b89a782a6f7d34ce685a813b098a1554926178c3f469eb65c0fc2c202a,text2qti_choice_b33bca2a5de7031553e0c9763449c5337b56c78d3f04cde8b097c782e6f7569d,text2qti_choice_a4bf7f652f662e415b829c7214cad9e81566f14c123b2c13d8db06500e2fe5c6,text2qti_choice_61172450adc912b51d5c5ee43392df71fd9cb6e575bab48d4866518aaaa681df,text2qti_choice_6897e56ead6624fe34ade0eecade84d48ecf4fa1e640ccecede90292c4fcb1cc</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>assessment_question_identifierref</fieldlabel>
+              <fieldentry>text2qti_question_ref_7746e15be10af556bf8301764a001c09f84cce849518eb59de9b1e194a888f82</fieldentry>
+            </qtimetadatafield>
+          </qtimetadata>
+        </itemmetadata>
+        <presentation>
+          <material>
+            <mattext texttype="text/html">&lt;p&gt;This is a first sentence from hell. In fact it is only made to fuck
+withmy writing code. That code is fucking horrible. I am not sure what Ivan
+is thinking or how we can fix it. Oh my god this is so long. That&amp;rsquo;s what
+she said. Anyway reminder that this is only here to stress test my
+writing hehehehehehehehhehehehehehehehheheheheheheheheheheheh
+$$\begin{aligned}
+     \mathbf{\dot x} =&amp;amp; \overbrace{\left[
+     \begin{array}{ccc}
+      -1 &amp;amp; \alpha  \
+      0 &amp;amp; \beta
+     \end{array}
+     \right]}^\mathbf{A} \mathbf{x} +
+  \overbrace{\left[
+     \begin{array}{cc}
+      0 \ 1
+      This is a first sentence from hell. In fact it is only made to fuck with my writing code. That code is fucking horrible. I am not sure what Ivan is thinking or how we can fix it. Oh my god this is so long. That&amp;rsquo;s what she said. Anyway reminder that this is only here to stress test my writing hehehehehehehehhehehehehehehehheheheheheheheheheheheh
+     \end{array}
+     \right]}^\mathbf{B} u \
+     y =&amp;amp; \overbrace{\left[
+     \begin{array}{cc}
+      1 &amp;amp; 1
+     \end{array}
+     \right]}^\mathbf{C} \mathbf{x}
+     This is a first sentence from hell. In fact it is only made to fuck with my writing code. That code is fucking horrible. I am not sure what Ivan is thinking or how we can fix it. Oh my god this is so long. That&amp;rsquo;s what she said. Anyway reminder that this is only here to stress test my writing hehehehehehehehhehehehehehehehheheheheheheheheheheheh
+ \end{aligned}$$&lt;/p&gt;
+&lt;p&gt;What are the equations for this system on controllable canonical form?&lt;/p&gt;</mattext>
+          </material>
+          <response_lid ident="response1" rcardinality="Multiple">
+            <render_choice>
+              <response_label ident="text2qti_choice_56d376b89a782a6f7d34ce685a813b098a1554926178c3f469eb65c0fc2c202a">
+                <material>
+                  <mattext texttype="text/html">&lt;p&gt;&lt;img class="equation_image" title="\mathbf{\dot x} =  \left[ \begin{array}{cc} 2-\beta &amp;amp; -1 \\ 1 &amp;amp; 0 \end{array} \right] \mathbf{x} + \left[ \begin{array}{c} 1 \\ 0 \end{array} \right] u, \quad y = \left[ \begin{array}{cc}  1 &amp;amp; \alpha \end{array} \right] \mathbf{x}" src="/%255Cmathbf%257B%255Cdot%2520x%257D%2520%253D%2520%2520%255Cleft%255B%2520%255Cbegin%257Barray%257D%257Bcc%257D%25202-%255Cbeta%2520%2526%2520-1%2520%255C%255C%25201%2520%2526%25200%2520%255Cend%257Barray%257D%2520%255Cright%255D%2520%255Cmathbf%257Bx%257D%2520%252B%2520%255Cleft%255B%2520%255Cbegin%257Barray%257D%257Bc%257D%25201%2520%255C%255C%25200%2520%255Cend%257Barray%257D%2520%255Cright%255D%2520u%252C%2520%255Cquad%2520y%2520%253D%2520%255Cleft%255B%2520%255Cbegin%257Barray%257D%257Bcc%257D%2520%25201%2520%2526%2520%255Calpha%2520%255Cend%257Barray%257D%2520%255Cright%255D%2520%255Cmathbf%257Bx%257D" alt="LaTeX: \mathbf{\dot x} =  \left[ \begin{array}{cc} 2-\beta &amp;amp; -1 \\ 1 &amp;amp; 0 \end{array} \right] \mathbf{x} + \left[ \begin{array}{c} 1 \\ 0 \end{array} \right] u, \quad y = \left[ \begin{array}{cc}  1 &amp;amp; \alpha \end{array} \right] \mathbf{x}" data-equation-content="\mathbf{\dot x} =  \left[ \begin{array}{cc} 2-\beta &amp;amp; -1 \\ 1 &amp;amp; 0 \end{array} \right] \mathbf{x} + \left[ \begin{array}{c} 1 \\ 0 \end{array} \right] u, \quad y = \left[ \begin{array}{cc}  1 &amp;amp; \alpha \end{array} \right] \mathbf{x}"&gt;&lt;/p&gt;</mattext>
+                </material>
+              </response_label>
+              <response_label ident="text2qti_choice_b33bca2a5de7031553e0c9763449c5337b56c78d3f04cde8b097c782e6f7569d">
+                <material>
+                  <mattext texttype="text/html">&lt;p&gt;&lt;img class="equation_image" title="\mathbf{\dot x} =  \left[ \begin{array}{cc} 1-\beta &amp;amp; -\beta \\ 1 &amp;amp; 0 \end{array} \right] \mathbf{x} + \left[ \begin{array}{c} 1 \\ 0 \end{array} \right] u, \quad y = \left[ \begin{array}{cc}  1 &amp;amp; \alpha\end{array} \right] \mathbf{x}" src="/%255Cmathbf%257B%255Cdot%2520x%257D%2520%253D%2520%2520%255Cleft%255B%2520%255Cbegin%257Barray%257D%257Bcc%257D%25201-%255Cbeta%2520%2526%2520-%255Cbeta%2520%255C%255C%25201%2520%2526%25200%2520%255Cend%257Barray%257D%2520%255Cright%255D%2520%255Cmathbf%257Bx%257D%2520%252B%2520%255Cleft%255B%2520%255Cbegin%257Barray%257D%257Bc%257D%25201%2520%255C%255C%25200%2520%255Cend%257Barray%257D%2520%255Cright%255D%2520u%252C%2520%255Cquad%2520y%2520%253D%2520%255Cleft%255B%2520%255Cbegin%257Barray%257D%257Bcc%257D%2520%25201%2520%2526%2520%255Calpha%255Cend%257Barray%257D%2520%255Cright%255D%2520%255Cmathbf%257Bx%257D" alt="LaTeX: \mathbf{\dot x} =  \left[ \begin{array}{cc} 1-\beta &amp;amp; -\beta \\ 1 &amp;amp; 0 \end{array} \right] \mathbf{x} + \left[ \begin{array}{c} 1 \\ 0 \end{array} \right] u, \quad y = \left[ \begin{array}{cc}  1 &amp;amp; \alpha\end{array} \right] \mathbf{x}" data-equation-content="\mathbf{\dot x} =  \left[ \begin{array}{cc} 1-\beta &amp;amp; -\beta \\ 1 &amp;amp; 0 \end{array} \right] \mathbf{x} + \left[ \begin{array}{c} 1 \\ 0 \end{array} \right] u, \quad y = \left[ \begin{array}{cc}  1 &amp;amp; \alpha\end{array} \right] \mathbf{x}"&gt;&lt;/p&gt;</mattext>
+                </material>
+              </response_label>
+              <response_label ident="text2qti_choice_a4bf7f652f662e415b829c7214cad9e81566f14c123b2c13d8db06500e2fe5c6">
+                <material>
+                  <mattext texttype="text/html">&lt;p&gt;&lt;img class="equation_image" title="\mathbf{\dot x} =  \left[ \begin{array}{cc} \beta-1 &amp;amp; \beta \\ 1 &amp;amp; 0 \end{array} \right] \mathbf{x} + \left[ \begin{array}{c} 1 \\ 0 \end{array} \right] u, \quad y = \left[ \begin{array}{cc}  1 &amp;amp; 1+\alpha\end{array} \right] \mathbf{x}" src="/%255Cmathbf%257B%255Cdot%2520x%257D%2520%253D%2520%2520%255Cleft%255B%2520%255Cbegin%257Barray%257D%257Bcc%257D%2520%255Cbeta-1%2520%2526%2520%255Cbeta%2520%255C%255C%25201%2520%2526%25200%2520%255Cend%257Barray%257D%2520%255Cright%255D%2520%255Cmathbf%257Bx%257D%2520%252B%2520%255Cleft%255B%2520%255Cbegin%257Barray%257D%257Bc%257D%25201%2520%255C%255C%25200%2520%255Cend%257Barray%257D%2520%255Cright%255D%2520u%252C%2520%255Cquad%2520y%2520%253D%2520%255Cleft%255B%2520%255Cbegin%257Barray%257D%257Bcc%257D%2520%25201%2520%2526%25201%252B%255Calpha%255Cend%257Barray%257D%2520%255Cright%255D%2520%255Cmathbf%257Bx%257D" alt="LaTeX: \mathbf{\dot x} =  \left[ \begin{array}{cc} \beta-1 &amp;amp; \beta \\ 1 &amp;amp; 0 \end{array} \right] \mathbf{x} + \left[ \begin{array}{c} 1 \\ 0 \end{array} \right] u, \quad y = \left[ \begin{array}{cc}  1 &amp;amp; 1+\alpha\end{array} \right] \mathbf{x}" data-equation-content="\mathbf{\dot x} =  \left[ \begin{array}{cc} \beta-1 &amp;amp; \beta \\ 1 &amp;amp; 0 \end{array} \right] \mathbf{x} + \left[ \begin{array}{c} 1 \\ 0 \end{array} \right] u, \quad y = \left[ \begin{array}{cc}  1 &amp;amp; 1+\alpha\end{array} \right] \mathbf{x}"&gt;&lt;/p&gt;</mattext>
+                </material>
+              </response_label>
+              <response_label ident="text2qti_choice_61172450adc912b51d5c5ee43392df71fd9cb6e575bab48d4866518aaaa681df">
+                <material>
+                  <mattext texttype="text/html">&lt;p&gt;&lt;img class="equation_image" title="\mathbf{\dot x} =  \left[ \begin{array}{cc} \beta-1 &amp;amp; -2\alpha \\ 1 &amp;amp; 0 \end{array} \right] \mathbf{x} + \left[ \begin{array}{c} 1 \\ 0 \end{array} \right] u, \quad y = \left[ \begin{array}{cc}  1 &amp;amp; 1+\alpha \end{array} \right] \mathbf{x}" src="/%255Cmathbf%257B%255Cdot%2520x%257D%2520%253D%2520%2520%255Cleft%255B%2520%255Cbegin%257Barray%257D%257Bcc%257D%2520%255Cbeta-1%2520%2526%2520-2%255Calpha%2520%255C%255C%25201%2520%2526%25200%2520%255Cend%257Barray%257D%2520%255Cright%255D%2520%255Cmathbf%257Bx%257D%2520%252B%2520%255Cleft%255B%2520%255Cbegin%257Barray%257D%257Bc%257D%25201%2520%255C%255C%25200%2520%255Cend%257Barray%257D%2520%255Cright%255D%2520u%252C%2520%255Cquad%2520y%2520%253D%2520%255Cleft%255B%2520%255Cbegin%257Barray%257D%257Bcc%257D%2520%25201%2520%2526%25201%252B%255Calpha%2520%255Cend%257Barray%257D%2520%255Cright%255D%2520%255Cmathbf%257Bx%257D" alt="LaTeX: \mathbf{\dot x} =  \left[ \begin{array}{cc} \beta-1 &amp;amp; -2\alpha \\ 1 &amp;amp; 0 \end{array} \right] \mathbf{x} + \left[ \begin{array}{c} 1 \\ 0 \end{array} \right] u, \quad y = \left[ \begin{array}{cc}  1 &amp;amp; 1+\alpha \end{array} \right] \mathbf{x}" data-equation-content="\mathbf{\dot x} =  \left[ \begin{array}{cc} \beta-1 &amp;amp; -2\alpha \\ 1 &amp;amp; 0 \end{array} \right] \mathbf{x} + \left[ \begin{array}{c} 1 \\ 0 \end{array} \right] u, \quad y = \left[ \begin{array}{cc}  1 &amp;amp; 1+\alpha \end{array} \right] \mathbf{x}"&gt;&lt;/p&gt;</mattext>
+                </material>
+              </response_label>
+              <response_label ident="text2qti_choice_6897e56ead6624fe34ade0eecade84d48ecf4fa1e640ccecede90292c4fcb1cc">
+                <material>
+                  <mattext texttype="text/html">&lt;p&gt;&lt;img class="equation_image" title="\mathbf{\dot x} =  \left[ \begin{array}{cc} \beta &amp;amp; -1 \\ 1 &amp;amp; 0 \end{array} \right] \mathbf{x} + \left[ \begin{array}{c} 1 \\ 0 \end{array} \right] u, \quad y = \left[ \begin{array}{cc}  1+\alpha &amp;amp; 1 \end{array} \right] \mathbf{x}" src="/%255Cmathbf%257B%255Cdot%2520x%257D%2520%253D%2520%2520%255Cleft%255B%2520%255Cbegin%257Barray%257D%257Bcc%257D%2520%255Cbeta%2520%2526%2520-1%2520%255C%255C%25201%2520%2526%25200%2520%255Cend%257Barray%257D%2520%255Cright%255D%2520%255Cmathbf%257Bx%257D%2520%252B%2520%255Cleft%255B%2520%255Cbegin%257Barray%257D%257Bc%257D%25201%2520%255C%255C%25200%2520%255Cend%257Barray%257D%2520%255Cright%255D%2520u%252C%2520%255Cquad%2520y%2520%253D%2520%255Cleft%255B%2520%255Cbegin%257Barray%257D%257Bcc%257D%2520%25201%252B%255Calpha%2520%2526%25201%2520%255Cend%257Barray%257D%2520%255Cright%255D%2520%255Cmathbf%257Bx%257D" alt="LaTeX: \mathbf{\dot x} =  \left[ \begin{array}{cc} \beta &amp;amp; -1 \\ 1 &amp;amp; 0 \end{array} \right] \mathbf{x} + \left[ \begin{array}{c} 1 \\ 0 \end{array} \right] u, \quad y = \left[ \begin{array}{cc}  1+\alpha &amp;amp; 1 \end{array} \right] \mathbf{x}" data-equation-content="\mathbf{\dot x} =  \left[ \begin{array}{cc} \beta &amp;amp; -1 \\ 1 &amp;amp; 0 \end{array} \right] \mathbf{x} + \left[ \begin{array}{c} 1 \\ 0 \end{array} \right] u, \quad y = \left[ \begin{array}{cc}  1+\alpha &amp;amp; 1 \end{array} \right] \mathbf{x}"&gt;&lt;/p&gt;</mattext>
+                </material>
+              </response_label>
+            </render_choice>
+          </response_lid>
+        </presentation>
+        <resprocessing>
+          <outcomes>
+            <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+          </outcomes>
+          <respcondition continue="No">
+            <conditionvar>
+              <and>
+                <not>
+                  <varequal respident="response1">text2qti_choice_56d376b89a782a6f7d34ce685a813b098a1554926178c3f469eb65c0fc2c202a</varequal>
+                </not>
+                <not>
+                  <varequal respident="response1">text2qti_choice_b33bca2a5de7031553e0c9763449c5337b56c78d3f04cde8b097c782e6f7569d</varequal>
+                </not>
+                <varequal respident="response1">text2qti_choice_a4bf7f652f662e415b829c7214cad9e81566f14c123b2c13d8db06500e2fe5c6</varequal>
+                <not>
+                  <varequal respident="response1">text2qti_choice_61172450adc912b51d5c5ee43392df71fd9cb6e575bab48d4866518aaaa681df</varequal>
+                </not>
+                <not>
+                  <varequal respident="response1">text2qti_choice_6897e56ead6624fe34ade0eecade84d48ecf4fa1e640ccecede90292c4fcb1cc</varequal>
+                </not>
+              </and>
+            </conditionvar>
+            <setvar action="Set" varname="SCORE">100</setvar>
+          </respcondition>
+        </resprocessing>
+      </item>
+    </section>
+  </assessment>
+</questestinterop>

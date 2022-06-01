@@ -1,6 +1,0 @@
-['       \\begin{equation*}\n', '\t\\mathbf{\\dot x} = \\overbrace{\\left[\n', '\t\\begin{array}{ccc}\n', '\t -1 & 0 & a  \\\\\n', '\t 0 & 0 & 0 \\\\\n', '\t0 & 0 & 0 \n', '\t\\end{array}\n', '\t\\right]}^\\mathbf{A} \\mathbf{x} + \n', ' \\overbrace{\\left[\n', '\t\\begin{array}{cc}\n', '\t 1 & 0 \\\\ 0 & 1 \\\\ 0 & 0\n', '\t\\end{array}\n', '\t\\right]}^\\mathbf{B} \\mathbf{u}, \\quad \n', '\ty = \\overbrace{\\left[\n', '\t\\begin{array}{ccc}\n', '\t 1 & 0 & 0\n', '\t\\end{array}\n', '\t\\right]}^\\mathbf{C} \\mathbf{x}\n', '\\end{equation*}\n', 'Is this system:\n']
-Unstable (internally and in the input-output sense)
-Exponentially stable
-*Marginally stable
-BIBO stable, but not internally stable
-Stability properties depend on $a$
