@@ -21,6 +21,10 @@ class multiple_choice():
         """
         Writes to an open file. Assume file opened with "a" option
         """
+        if self.corr_ind == None:
+            self.ans_list.append("Please provide correct answer")
+            self.corr_ind = [len(self.ans_list) - 1]
+
         to_write = (f"%question {nq}\n"
         "\\begin{IndexedQuestion}\n"
         "   \QuestionContentUnits{" f"{content_units.strip()}""}\n"
